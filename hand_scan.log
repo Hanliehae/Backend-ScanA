@@ -456,3 +456,185 @@
 2025-05-24 11:17:07,417 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:17:07] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
 2025-05-24 11:17:09,488 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:17:09] "[32mGET /api/user HTTP/1.1[0m" 308 -
 2025-05-24 11:17:09,701 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:17:09] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 11:21:02,893 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.7:8000
+2025-05-24 11:21:02,894 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 11:21:02,898 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 11:21:18,716 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 11:21:18,733 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 11:25:20,515 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:20] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 11:25:21,944 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:21] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 11:25:23,461 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:23] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 11:25:23,501 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:23] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 11:25:23,526 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:23] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 11:25:23,566 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:23] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 11:25:23,715 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:23] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 11:25:44,548 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:44] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 11:28:55,944 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:55] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 11:28:56,310 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:56] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 11:28:57,319 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:57] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 11:28:57,545 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:57] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 11:28:57,570 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:57] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 11:28:57,624 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:57] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 11:28:57,625 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:57] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 11:35:01,049 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:35:01] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 11:39:03,113 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\attendance_service.py', reloading
+2025-05-24 11:39:03,941 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 11:39:32,809 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 11:41:24,316 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 11:41:40,515 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 11:41:40,526 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 11:42:39,425 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:42:39] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 11:44:10,677 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
+2025-05-24 11:44:11,501 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 11:44:27,466 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 11:44:27,471 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 11:50:00,959 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
+2025-05-24 11:50:01,884 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 11:58:27,802 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.7:8000
+2025-05-24 11:58:27,802 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 11:58:27,815 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 11:58:41,717 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 11:58:41,721 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 12:37:10,023 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:10] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 12:37:10,328 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:10] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 12:37:11,925 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:11] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 12:37:11,955 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:11] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 12:37:11,985 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:11] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 12:37:12,070 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:12] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 12:37:12,094 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:12] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 12:37:28,883 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:28] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 12:38:24,690 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
+2025-05-24 12:38:25,478 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 12:38:40,314 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 12:38:40,330 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 12:39:47,127 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
+2025-05-24 12:39:47,814 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 12:40:00,825 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 12:40:00,844 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 12:41:07,459 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 12:41:08,159 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 12:41:20,564 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 12:41:20,574 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 12:41:28,094 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 12:41:28,789 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 12:41:41,606 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 12:41:41,623 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 12:41:48,015 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:41:48] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 401 -
+2025-05-24 13:15:32,617 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 13:15:33,455 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 13:15:56,149 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 13:15:56,166 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 13:16:11,793 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 13:16:12,498 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 13:16:25,690 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 13:16:25,702 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 13:16:52,589 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
+2025-05-24 13:16:53,287 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 13:17:06,533 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 13:17:06,541 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 13:18:40,019 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:40] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 13:18:40,299 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:40] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 13:18:41,698 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:41] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 13:18:41,729 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:41] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 13:18:41,761 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:41] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 13:18:41,850 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:41] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 13:18:42,623 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:42] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 13:18:50,638 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:50] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 401 -
+2025-05-24 13:19:42,988 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
+2025-05-24 13:19:43,703 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 13:19:57,230 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 13:19:57,246 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 13:20:06,073 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:20:06] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 401 -
+2025-05-24 13:21:40,696 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.7:8000
+2025-05-24 13:21:40,696 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 13:21:40,698 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 13:21:53,025 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 13:21:53,043 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 13:22:09,960 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 13:22:12,569 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 13:22:12,571 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 13:22:12,576 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 13:22:12,576 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 13:22:12,576 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 13:22:12,576 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 13:22:12,576 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 13:22:12,586 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 13:22:12,586 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 13:22:12,589 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:22:12] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 13:28:08,713 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 13:28:09,404 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 13:28:22,322 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 13:28:22,338 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 13:31:30,245 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:30] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 13:31:30,460 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:30] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 13:31:31,734 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:31] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 13:31:31,804 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:31] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 13:31:31,804 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:31] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 13:31:31,818 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:31] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 13:31:31,910 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:31] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 13:31:41,129 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 13:31:46,655 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 13:31:46,655 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 13:31:46,655 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 13:31:46,655 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 13:31:46,670 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 13:31:46,670 - src.database.api.services.hand_scan_service - ERROR - Error in predict_hand_owner: load_model() got an unexpected keyword argument 'compile'
+2025-05-24 13:31:46,672 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 106, in predict_hand_owner
+    model = load_model(model_path, compile=False)
+TypeError: load_model() got an unexpected keyword argument 'compile'
+
+2025-05-24 13:31:46,673 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 13:31:46,675 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 13:31:46,676 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 13:31:46,678 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:46] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 13:33:13,265 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 13:33:13,992 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 13:33:26,465 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 13:33:26,465 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 13:34:40,618 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:40] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 13:34:40,830 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:40] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 13:34:42,191 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:42] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 13:34:42,219 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:42] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 13:34:42,234 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:42] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 13:34:42,269 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:42] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 13:34:42,351 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:42] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 13:34:51,405 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 13:34:54,514 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 13:34:54,516 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 13:34:54,524 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 13:34:54,525 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 13:34:54,525 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 13:34:54,617 - src.database.api.services.hand_scan_service - ERROR - Error in predict_hand_owner: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 13:34:54,669 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 72, in predict_hand_owner
+    model = load_model(model_path, compile=False)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 13:34:54,671 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 13:34:54,673 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 13:34:54,673 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 13:34:54,676 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:54] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 13:35:33,516 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 13:35:34,236 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 13:35:47,851 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 13:35:47,869 - werkzeug - INFO -  * Debugger PIN: 589-864-851
