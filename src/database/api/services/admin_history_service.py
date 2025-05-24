@@ -2,10 +2,11 @@ from src.database.config import SessionLocal
 from src.database.models import Attendance, Meeting, Course, ClassStudent, Class, User
 from sqlalchemy.orm import joinedload
 
-db = SessionLocal()
+
 
 
 def get_all_attendance_history(course_id=None, student_id=None, semester=None, academic_year=None, class_id=None, status=None):
+    db = SessionLocal()
     try:
         # Base query with joins
         query = db.query(
@@ -46,8 +47,5 @@ def get_all_attendance_history(course_id=None, student_id=None, semester=None, a
 
         return results
 
-    except Exception as e:
-        print(f"Error in get_all_attendance_history: {str(e)}")
-        raise e
     finally:
         db.close()

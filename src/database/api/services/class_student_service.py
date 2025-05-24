@@ -49,3 +49,28 @@ def get_students_in_class(class_id):
     )
     session.close()
     return students
+
+
+def remove_students_from_class(class_id, student_ids):
+    session = SessionLocal()
+    try:
+        # Check if class exists
+        class_obj = session.query(Class).filter(Class.id == class_id).first()
+        if not class_obj:
+            session.close()
+            return None, "Class not found."
+
+        # Remove students from class
+        deleted_count = session.query(ClassStudent).filter(
+            ClassStudent.class_id == class_id,
+            ClassStudent.student_id.in_(student_ids)
+        ).delete(synchronize_session=False)
+
+        session.commit()
+        session.close()
+
+        return deleted_count, None
+    except Exception as e:
+        session.rollback()
+        session.close()
+        return None, str(e)

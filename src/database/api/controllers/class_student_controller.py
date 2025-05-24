@@ -39,3 +39,23 @@ def get_students_by_class(class_id):
     } for s in students]
 
     return {"students": student_list}, 200
+
+
+@class_student_bp.route('/remove', methods=['POST'])
+@admin_required
+def remove_students():
+    data = request.get_json()
+    class_id = data.get('class_id')
+    student_ids = data.get('student_ids')  # List of student IDs
+
+    if not isinstance(student_ids, list):
+        return {"message": "student_ids must be a list"}, 400
+
+    deleted_count, error = class_student_service.remove_students_from_class(
+        class_id, student_ids)
+    if error:
+        return {"message": error}, 400
+
+    return {
+        "message": f"Removed {deleted_count} students from class."
+    }, 200

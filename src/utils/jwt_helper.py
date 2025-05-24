@@ -1,10 +1,11 @@
 import jwt
 from datetime import datetime, timedelta
-from flask import request
+from flask import request, jsonify
 from functools import wraps
 from src.database.config import JWT_SECRET_KEY, JWT_ALGORITHM
 from src.database.models import User
 from src.database.config import SessionLocal
+from src.database.database import get_db
 
 # jwt_helper.py
 
@@ -58,9 +59,8 @@ def login_required(f):
         if not data:
             return {"message": "Invalid or expired token"}, 401
 
-        session = SessionLocal()
-        user = session.query(User).filter(User.id == data["user_id"]).first()
-        session.close()
+        db = next(get_db())
+        user = db.query(User).filter(User.id == data["user_id"]).first()
 
         if not user:
             return {"message": "User not found"}, 404
