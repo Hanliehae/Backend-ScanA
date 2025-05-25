@@ -961,3 +961,109 @@ WHERE users.hand_scan_class_index = %(hand_scan_class_index_1)s
 2025-05-25 10:01:36,693 - werkzeug - WARNING -  * Debugger is active!
 2025-05-25 10:01:36,713 - werkzeug - INFO -  * Debugger PIN: 589-864-851
 2025-05-25 10:02:04,286 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
+2025-05-25 10:02:05,126 - werkzeug - INFO -  * Restarting with stat
+2025-05-25 10:02:12,909 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-25 10:02:12,909 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-25 10:02:12,909 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-25 10:02:14,830 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-25 10:02:14,830 - src.database.api.services.hand_scan_service - INFO - Model Summary:
+2025-05-25 10:02:15,176 - werkzeug - WARNING -  * Debugger is active!
+2025-05-25 10:02:15,203 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-25 10:02:24,502 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-25 10:02:28,106 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-25 10:02:28,106 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-25 10:02:28,316 - src.database.api.controllers.hand_scan_controller - INFO - Found active meeting: 23 for course: 4
+2025-05-25 10:02:28,327 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-25 10:02:28,327 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-25 10:02:28,327 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-25 10:02:28,327 - src.database.api.services.hand_scan_service - INFO - Preprocessing image for prediction
+2025-05-25 10:02:28,327 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-25 10:02:28,327 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-25 10:02:28,522 - src.database.api.services.hand_scan_service - INFO - Original image shape: (4160, 3120, 3)
+2025-05-25 10:02:28,523 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-25 10:02:28,547 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-25 10:02:28,552 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-25 10:02:28,554 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-25 10:02:28,554 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-25 10:02:28,555 - src.database.api.services.hand_scan_service - INFO - Making prediction with model
+2025-05-25 10:02:30,866 - src.database.api.services.hand_scan_service - INFO - Raw predictions shape: (1, 27)
+2025-05-25 10:02:30,866 - src.database.api.services.hand_scan_service - INFO - Raw predictions: [[1.9470278e-04 4.0821105e-05 2.4791311e-03 1.3855124e-04 4.4181738e-06
+  1.6676649e-03 9.9090615e-04 2.4390368e-02 1.2359837e-03 6.1837149e-05
+  6.1813212e-04 8.4946714e-02 3.2522663e-02 6.0883472e-03 1.7253090e-02
+  2.4501752e-02 1.8320327e-03 4.3799546e-02 1.6955096e-01 1.1582177e-01
+  2.6695824e-01 1.9190259e-01 1.4648248e-03 3.1950108e-03 1.9042860e-03
+  5.4347655e-03 1.0009221e-03]]
+2025-05-25 10:02:30,866 - src.database.api.services.hand_scan_service - INFO - Predicted class: 20 with confidence: 0.2670
+2025-05-25 10:02:30,866 - src.database.api.services.hand_scan_service - INFO - Creating new database session for user lookup
+2025-05-25 10:02:30,882 - src.database.api.services.hand_scan_service - INFO - Looking for user with hand_scan_class_index: 20
+2025-05-25 10:02:30,882 - src.database.api.services.hand_scan_service - INFO - Found matching user: Algy Ngenget (ID: 25)
+2025-05-25 10:02:30,882 - src.database.api.services.hand_scan_service - INFO - Closing database session after user lookup
+2025-05-25 10:02:30,898 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: 25, Confidence: 0.26695823669433594
+2025-05-25 10:02:30,899 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-25 10:02:30,901 - src.database.api.controllers.hand_scan_controller - INFO - Recording attendance for student_id: 25
+2025-05-25 10:02:30,901 - src.database.api.services.hand_scan_service - INFO - Creating new database session for attendance recording
+2025-05-25 10:02:30,902 - src.database.api.services.hand_scan_service - INFO - Starting attendance recording process for user_id: 25, meeting_id: 23
+2025-05-25 10:02:30,902 - src.database.api.services.hand_scan_service - INFO - Checking if user exists with id: 25
+2025-05-25 10:02:30,907 - src.database.api.services.hand_scan_service - INFO - Found user: Algy Ngenget (ID: 25)
+2025-05-25 10:02:30,907 - src.database.api.services.hand_scan_service - INFO - Checking if meeting exists with id: 23
+2025-05-25 10:02:30,911 - src.database.api.services.hand_scan_service - INFO - Found meeting: 23 for class_id: 14
+2025-05-25 10:02:30,912 - src.database.api.services.hand_scan_service - INFO - Looking for class_student record for student Algy Ngenget in class 14
+2025-05-25 10:02:30,914 - src.database.api.services.hand_scan_service - INFO - Found class_student record: 28
+2025-05-25 10:02:30,914 - src.database.api.services.hand_scan_service - INFO - Checking for existing attendance record
+2025-05-25 10:02:30,928 - src.database.api.services.hand_scan_service - INFO - Creating new attendance record
+2025-05-25 10:02:30,929 - src.database.api.services.hand_scan_service - INFO - Adding new attendance record to database
+2025-05-25 10:02:30,930 - src.database.api.services.hand_scan_service - INFO - Committing new attendance record to database
+2025-05-25 10:02:30,959 - src.database.api.services.hand_scan_service - INFO - Successfully created new attendance record: 13
+2025-05-25 10:02:30,960 - src.database.api.services.hand_scan_service - INFO - Closing database session after attendance recording
+2025-05-25 10:02:30,964 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 10:02:30] "POST /api/scan-hand HTTP/1.1" 200 -
+2025-05-25 10:04:37,219 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 10:04:37] "[32mGET /api/admin/history HTTP/1.1[0m" 308 -
+2025-05-25 10:04:38,510 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 10:04:38] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-25 10:05:01,688 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-25 10:05:05,437 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-25 10:05:05,437 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-25 10:05:05,452 - src.database.api.controllers.hand_scan_controller - INFO - Found active meeting: 23 for course: 4
+2025-05-25 10:05:05,452 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-25 10:05:05,452 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-25 10:05:05,452 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-25 10:05:05,465 - src.database.api.services.hand_scan_service - INFO - Preprocessing image for prediction
+2025-05-25 10:05:05,465 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-25 10:05:05,466 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-25 10:05:05,661 - src.database.api.services.hand_scan_service - INFO - Original image shape: (4160, 3120, 3)
+2025-05-25 10:05:05,661 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-25 10:05:05,683 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-25 10:05:05,696 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-25 10:05:05,704 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-25 10:05:05,704 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-25 10:05:05,705 - src.database.api.services.hand_scan_service - INFO - Making prediction with model
+2025-05-25 10:05:05,849 - src.database.api.services.hand_scan_service - INFO - Raw predictions shape: (1, 27)
+2025-05-25 10:05:05,849 - src.database.api.services.hand_scan_service - INFO - Raw predictions: [[1.8132151e-04 4.9091410e-05 2.1766217e-03 3.1690011e-04 1.2178767e-06
+  3.5108099e-04 1.3008141e-03 1.6105904e-01 1.3284680e-03 8.4656356e-05
+  8.2655298e-04 9.9898122e-02 4.0582437e-02 2.6973872e-03 3.4530840e-03
+  3.0236702e-02 5.7781959e-04 2.4784565e-02 5.5462509e-02 5.1323015e-02
+  1.8701097e-01 3.2318541e-01 1.5776070e-03 3.2460166e-03 4.7597005e-03
+  2.0475131e-03 1.4813299e-03]]
+2025-05-25 10:05:05,865 - src.database.api.services.hand_scan_service - INFO - Predicted class: 21 with confidence: 0.3232
+2025-05-25 10:05:05,865 - src.database.api.services.hand_scan_service - INFO - Creating new database session for user lookup
+2025-05-25 10:05:05,865 - src.database.api.services.hand_scan_service - INFO - Looking for user with hand_scan_class_index: 21
+2025-05-25 10:05:05,865 - src.database.api.services.hand_scan_service - INFO - Found matching user: Monica Aprilia Pandeiroth (ID: 26)
+2025-05-25 10:05:05,865 - src.database.api.services.hand_scan_service - INFO - Closing database session after user lookup
+2025-05-25 10:05:05,872 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: 26, Confidence: 0.32318541407585144
+2025-05-25 10:05:05,874 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-25 10:05:05,874 - src.database.api.controllers.hand_scan_controller - INFO - Recording attendance for student_id: 26
+2025-05-25 10:05:05,875 - src.database.api.services.hand_scan_service - INFO - Creating new database session for attendance recording
+2025-05-25 10:05:05,875 - src.database.api.services.hand_scan_service - INFO - Starting attendance recording process for user_id: 26, meeting_id: 23
+2025-05-25 10:05:05,875 - src.database.api.services.hand_scan_service - INFO - Checking if user exists with id: 26
+2025-05-25 10:05:05,878 - src.database.api.services.hand_scan_service - INFO - Found user: Monica Aprilia Pandeiroth (ID: 26)
+2025-05-25 10:05:05,879 - src.database.api.services.hand_scan_service - INFO - Checking if meeting exists with id: 23
+2025-05-25 10:05:05,882 - src.database.api.services.hand_scan_service - INFO - Found meeting: 23 for class_id: 14
+2025-05-25 10:05:05,883 - src.database.api.services.hand_scan_service - INFO - Looking for class_student record for student Monica Aprilia Pandeiroth in class 14
+2025-05-25 10:05:05,885 - src.database.api.services.hand_scan_service - INFO - Found class_student record: 6
+2025-05-25 10:05:05,886 - src.database.api.services.hand_scan_service - INFO - Checking for existing attendance record
+2025-05-25 10:05:05,888 - src.database.api.services.hand_scan_service - INFO - Creating new attendance record
+2025-05-25 10:05:05,889 - src.database.api.services.hand_scan_service - INFO - Adding new attendance record to database
+2025-05-25 10:05:05,890 - src.database.api.services.hand_scan_service - INFO - Committing new attendance record to database
+2025-05-25 10:05:05,897 - src.database.api.services.hand_scan_service - INFO - Successfully created new attendance record: 14
+2025-05-25 10:05:05,898 - src.database.api.services.hand_scan_service - INFO - Closing database session after attendance recording
+2025-05-25 10:05:05,901 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 10:05:05] "POST /api/scan-hand HTTP/1.1" 200 -
+2025-05-25 10:05:30,401 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 10:05:30] "[32mGET /api/admin/history HTTP/1.1[0m" 308 -
+2025-05-25 10:05:30,564 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 10:05:30] "GET /api/admin/history/ HTTP/1.1" 200 -
