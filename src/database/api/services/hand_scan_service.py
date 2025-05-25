@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 # Global variable for model
 model = None
 
-def load_model():
+def load_hand_model():
     global model
     try:
         logger.info("Starting model loading process")
@@ -34,18 +34,19 @@ def load_model():
         
         if os.path.exists(model_path):
             logger.info("Model file found, attempting to load")
-            # Load model dengan compile=False untuk menghindari masalah kompilasi
-            model = load_model(model_path, compile=False)
-            logger.info("Model loaded successfully without compilation")
+            # Load model dengan custom_objects untuk menangani kompatibilitas
+            custom_objects = {
+                'MobileNetV2': tf.keras.applications.MobileNetV2,
+                'relu6': tf.keras.layers.ReLU(6.0),
+            }
             
-            # Recompile model dengan konfigurasi yang sesuai
-            logger.info("Recompiling model with configuration")
-            model.compile(
-                optimizer='adam',
-                loss='categorical_crossentropy',
-                metrics=['accuracy']
+            # Load model dengan custom_objects dan compile=False
+            model = tf.keras.models.load_model(
+                model_path,
+                custom_objects=custom_objects,
+                compile=False
             )
-            logger.info("Model recompiled successfully")
+            logger.info("Model loaded successfully")
             
             # Log model summary
             logger.info("Model Summary:")
@@ -58,6 +59,9 @@ def load_model():
         logger.error(f"Error loading model: {str(e)}")
         logger.error(f"Traceback: {traceback.format_exc()}")
         model = None
+
+# Load model saat modul diimpor
+load_hand_model()
 
 def preprocess_image(image):
     try:
@@ -118,7 +122,7 @@ def predict_hand_owner(image):
         logger.info(f"Raw predictions shape: {predictions.shape}")
         logger.info(f"Raw predictions: {predictions}")
         # Get the highest confidence prediction
-        predicted_class = np.argmax(predictions[0])
+        predicted_class = int(np.argmax(predictions[0]))  # Convert to Python int
         confidence = float(predictions[0][predicted_class])
         
         logger.info(f"Predicted class: {predicted_class} with confidence: {confidence:.4f}")

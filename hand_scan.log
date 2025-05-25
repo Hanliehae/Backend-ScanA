@@ -1,625 +1,221 @@
-2025-05-19 12:53:08,877 - werkzeug - WARNING -  * Debugger is active!
-2025-05-19 12:53:08,877 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-19 13:08:41,411 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:08:41] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 13:08:41,437 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:08:41] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:08:41,442 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:08:41] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-19 13:08:41,461 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:08:41] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 13:08:41,491 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:08:41] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-19 13:08:44,579 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:08:44] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 13:08:44,608 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:08:44] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:08:44,629 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:08:44] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-19 13:08:44,655 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:08:44] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 13:08:44,661 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:08:44] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-19 13:09:01,302 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:09:01] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
-2025-05-19 13:35:52,746 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:35:52] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-19 13:35:53,122 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:35:53] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-19 13:35:54,081 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:35:54] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:35:54,278 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:35:54] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-19 13:35:54,307 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:35:54] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 13:35:54,326 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:35:54] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 13:35:54,359 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:35:54] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-19 13:36:20,661 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:36:20] "[32mGET /api/courses HTTP/1.1[0m" 308 -
-2025-05-19 13:36:21,332 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:36:21] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:36:50,943 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:36:50] "[35m[1mGET /api/courses/ HTTP/1.1[0m" 500 -
-2025-05-19 13:36:51,507 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:36:51] "[35m[1mGET /api/user/ HTTP/1.1[0m" 500 -
-2025-05-19 13:38:52,788 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:38:52] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-19 13:38:53,073 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:38:53] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-19 13:38:53,933 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:38:53] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-19 13:38:53,933 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:38:53] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 13:38:53,937 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:38:53] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:38:53,941 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:38:53] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 13:38:53,945 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:38:53] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-19 13:39:31,969 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:39:31] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:39:32,152 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:39:32] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:39:39,094 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:39:39] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:39:39,325 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:39:39] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:39:42,513 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:39:42] "[32mGET /api/courses HTTP/1.1[0m" 308 -
-2025-05-19 13:39:42,752 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:39:42] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 13:41:27,510 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:41:27] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:41:28,321 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:41:28] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:42:01,068 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:42:01] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:42:01,146 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:42:01] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:42:26,882 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:42:26] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:42:27,181 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:42:27] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:42:45,782 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:42:45] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-19 13:43:13,985 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:43:13] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:43:14,546 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:43:14] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:44:07,139 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:07] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:44:07,720 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:07] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:44:14,957 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:14] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 13:44:20,935 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:20] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:44:21,096 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:21] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:44:21,144 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:21] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 13:44:23,629 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:23] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-19 13:44:24,832 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:24] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:44:24,990 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:24] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:44:53,111 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:53] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 13:44:53,117 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:44:53] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 13:45:17,230 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:45:17] "[35m[1mGET /api/classes/by-course/4 HTTP/1.1[0m" 500 -
-2025-05-19 13:45:23,350 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:45:23] "[35m[1mGET /api/user/ HTTP/1.1[0m" 500 -
-2025-05-19 13:49:14,283 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:49:14] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-19 13:50:14,038 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8000
- * Running on http://192.168.125.39:8000
-2025-05-19 13:50:14,038 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-05-19 13:50:14,043 - werkzeug - INFO -  * Restarting with stat
-2025-05-19 13:50:29,208 - werkzeug - WARNING -  * Debugger is active!
-2025-05-19 13:50:29,259 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-19 13:50:31,672 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:50:31] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-19 13:50:32,042 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:50:32] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-19 13:50:33,248 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:50:33] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 13:50:33,294 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:50:33] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 13:50:33,326 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:50:33] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-19 13:50:33,345 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:50:33] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 13:50:33,533 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:50:33] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-19 13:53:47,913 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:53:47] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-19 13:53:48,146 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:53:48] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-19 13:53:48,780 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:53:48] "[33mGET /api/student/schedule/today HTTP/1.1[0m" 404 -
-2025-05-19 13:53:48,944 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 13:53:48] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-19 13:54:52,346 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8000
- * Running on http://192.168.125.39:8000
-2025-05-19 13:54:52,347 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-05-19 13:54:52,350 - werkzeug - INFO -  * Restarting with stat
-2025-05-19 13:55:07,099 - werkzeug - WARNING -  * Debugger is active!
-2025-05-19 13:55:07,106 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-19 14:05:08,383 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:08] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-19 14:05:08,640 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:08] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-19 14:05:09,409 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:09] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 14:05:09,479 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:09] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:05:09,494 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:09] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-19 14:05:09,530 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:09] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 14:05:09,697 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:09] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-19 14:05:31,315 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:31] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:05:31,748 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:31] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:05:33,067 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:33] "[32mGET /api/courses HTTP/1.1[0m" 308 -
-2025-05-19 14:05:33,285 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:33] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 14:05:34,119 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:34] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 14:05:34,516 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:34] "[32mGET /api/admin/history HTTP/1.1[0m" 308 -
-2025-05-19 14:05:34,822 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:34] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-19 14:05:37,434 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:37] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:05:37,539 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:05:37] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:06:24,202 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:06:24] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:06:24,250 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:06:24] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:07:03,031 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:07:03] "[35m[1mPOST /api/auth/register-student HTTP/1.1[0m" 201 -
-2025-05-19 14:07:03,440 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:07:03] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:07:03,646 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:07:03] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:07:19,419 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:07:19] "GET /api/user/5 HTTP/1.1" 200 -
-2025-05-19 14:07:31,074 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:07:31] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:07:31,126 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:07:31] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:07:39,774 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:07:39] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-19 14:07:48,587 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:07:48] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:07:48,592 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:07:48] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:07:48,720 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:07:48] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:08:00,586 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:00] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:08:01,980 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:01] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:08:02,609 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:02] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:08:02,648 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:02] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:08:12,912 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:12] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-19 14:08:22,499 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:22] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-19 14:08:23,808 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:23] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:08:23,840 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:23] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:08:23,893 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:23] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:08:28,017 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:28] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:08:29,397 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:29] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:08:33,119 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:33] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:08:34,248 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:08:34] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-19 14:09:10,982 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:09:10] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-19 14:09:11,118 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:09:11] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-19 14:09:11,614 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:09:11] "[33mGET /api/student/schedule/today HTTP/1.1[0m" 404 -
-2025-05-19 14:09:11,621 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:09:11] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-19 14:09:58,649 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:09:58] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-19 14:09:58,872 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:09:58] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-19 14:10:00,109 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:00] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:10:00,124 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:00] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-19 14:10:00,277 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:00] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 14:10:00,483 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:00] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-19 14:10:00,486 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:00] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 14:10:05,314 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:05] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:10:05,420 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:05] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:10:08,975 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:08] "[32mGET /api/courses HTTP/1.1[0m" 308 -
-2025-05-19 14:10:09,266 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:09] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 14:10:12,023 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:12] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-19 14:10:15,027 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:15] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:10:15,029 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:15] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:10:15,139 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:15] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:10:28,708 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:28] "[35m[1mPOST /api/meetings/create HTTP/1.1[0m" 201 -
-2025-05-19 14:10:41,469 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:41] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:10:41,524 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:41] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-19 14:10:44,347 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:44] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:10:44,351 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:44] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-19 14:10:44,376 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:44] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-19 14:10:44,544 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:44] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 14:10:44,654 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:10:44] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 14:11:02,540 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:11:02] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
-2025-05-19 14:15:33,141 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:15:33] "[32mGET /api/admin/history HTTP/1.1[0m" 308 -
-2025-05-19 14:15:33,337 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:15:33] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-19 14:16:51,424 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:16:51] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-19 14:17:12,991 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:17:12] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-19 14:17:14,278 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:17:14] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:17:14,402 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:17:14] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:17:14,543 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:17:14] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 14:17:16,615 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:17:16] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:17:22,799 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:17:22] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:17:24,361 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:17:24] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-19 14:17:53,785 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:17:53] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 14:17:53,940 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:17:53] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-19 14:17:53,992 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 14:17:53] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 15:02:35,781 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:02:35] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-19 15:02:35,956 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:02:35] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-19 15:02:36,258 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:02:36] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-19 15:02:36,258 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:02:36] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-19 15:02:36,258 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:02:36] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-19 15:03:06,739 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:03:06] "[35m[1mGET /api/meetings/all HTTP/1.1[0m" 500 -
-2025-05-19 15:03:06,755 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:03:06] "[35m[1mGET /api/admin/history/ HTTP/1.1[0m" 500 -
-2025-05-19 15:03:11,419 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:03:11] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-19 15:03:41,562 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:03:41] "[35m[1mGET /api/user/ HTTP/1.1[0m" 500 -
-2025-05-19 15:03:54,648 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:03:54] "[35m[1mGET /api/courses/ HTTP/1.1[0m" 500 -
-2025-05-19 15:03:54,648 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:03:54] "[35m[1mGET /api/classes/ HTTP/1.1[0m" 500 -
-2025-05-19 15:03:54,664 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:03:54] "[35m[1mGET /api/user/ HTTP/1.1[0m" 500 -
-2025-05-19 15:03:54,680 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:03:54] "[35m[1mGET /api/meetings/all HTTP/1.1[0m" 500 -
-2025-05-19 15:04:11,890 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:04:11] "[35m[1mGET /api/admin/history/ HTTP/1.1[0m" 500 -
-2025-05-19 15:07:02,034 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:07:02] "[35m[1mGET /api/user/ HTTP/1.1[0m" 500 -
-2025-05-19 15:07:02,081 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:07:02] "[35m[1mGET /api/meetings/all HTTP/1.1[0m" 500 -
-2025-05-19 15:07:02,096 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:07:02] "[35m[1mGET /api/courses/ HTTP/1.1[0m" 500 -
-2025-05-19 15:07:02,096 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:07:02] "[35m[1mGET /api/classes/ HTTP/1.1[0m" 500 -
-2025-05-19 15:07:02,117 - werkzeug - INFO - 192.168.125.3 - - [19/May/2025 15:07:02] "[35m[1mGET /api/admin/history/ HTTP/1.1[0m" 500 -
-2025-05-24 10:21:22,766 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-05-24 13:51:05,585 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:8000
  * Running on http://192.168.1.7:8000
-2025-05-24 10:21:22,766 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-05-24 10:21:22,772 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 10:21:37,591 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 10:21:37,604 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 10:24:27,773 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:27] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-24 10:24:28,290 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:28] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-24 10:24:29,771 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:29] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:24:29,784 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:29] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-24 10:24:29,824 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:29] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 10:24:29,908 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:29] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 10:24:30,000 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:30] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-24 10:24:44,538 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:44] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:24:44,740 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:44] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:24:53,724 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:53] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 10:24:54,639 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:54] "[32mGET /api/courses HTTP/1.1[0m" 308 -
-2025-05-24 10:24:54,697 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:24:54] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 10:25:12,300 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:25:12] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:25:12,495 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:25:12] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:25:21,515 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:25:21] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 10:25:29,310 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:25:29] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:25:29,334 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:25:29] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:25:29,363 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:25:29] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:31:01,220 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:31:01] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:31:01,234 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:31:01] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:31:01,382 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:31:01] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:31:14,016 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:31:14] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:31:14,044 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:31:14] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:31:14,163 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:31:14] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:31:16,148 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:31:16] "GET /api/class-students/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:31:17,905 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:31:17] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:31:17,924 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:31:17] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:31:18,163 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:31:18] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:32:37,994 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:32:37] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:32:37,998 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:32:37] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:32:38,259 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:32:38] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:32:43,205 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:32:43] "GET /api/class-students/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:32:44,114 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:32:44] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:32:44,300 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:32:44] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:33:13,038 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:33:13] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:33:33,024 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:33:33] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:33:33,169 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:33:33] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:33:33,625 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:33:33] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:33:38,936 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:33:38] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:33:38,938 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:33:38] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:33:39,097 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:33:39] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:34:25,330 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:34:25] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:34:25,332 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:34:25] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:34:25,613 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:34:25] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:34:28,808 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:34:28] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:34:28,808 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:34:28] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:34:29,281 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:34:29] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:34:34,329 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:34:34] "GET /api/class-students/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:34:35,887 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:34:35] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:34:36,287 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:34:36] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:34:36,417 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:34:36] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:35:50,033 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:35:50] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:35:50,042 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:35:50] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:35:50,090 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:35:50] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:35:58,769 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:35:58] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:35:58,908 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:35:58] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:35:59,838 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:35:59] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:36:12,389 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:12] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:36:12,553 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:12] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:36:12,652 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:12] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:36:16,184 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:16] "GET /api/class-students/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:36:17,124 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:17] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:36:17,359 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:17] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:36:54,205 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:54] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:36:54,207 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:54] "GET /api/class-students/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:36:54,465 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:54] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:36:55,305 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:55] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:36:55,661 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:55] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:36:56,863 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:36:56] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:37:47,598 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:37:47] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:37:47,605 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:37:47] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:37:47,649 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:37:47] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:38:24,067 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:38:24] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:38:24,075 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:38:24] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:38:24,423 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:38:24] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:39:03,662 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:39:03] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:39:03,672 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:39:03] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:39:03,781 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:39:03] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:40:46,178 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:40:46] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:40:46,203 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:40:46] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:40:46,397 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:40:46] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:42:24,101 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:42:24] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:42:24,107 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:42:24] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:42:24,671 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:42:24] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:43:22,893 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:43:22] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:43:22,898 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:43:22] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:43:23,252 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:43:23] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:43:52,828 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:43:52] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:43:52,838 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:43:52] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:43:53,242 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:43:53] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:44:01,754 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:44:01] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:44:01,754 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:44:01] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:44:01,991 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:44:01] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:44:46,041 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:44:46] "[31m[1mDELETE /api/classes/17 HTTP/1.1[0m" 405 -
-2025-05-24 10:44:55,382 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:44:55] "GET /api/class-students/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:44:56,314 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:44:56] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:44:56,543 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:44:56] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:44:59,972 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:44:59] "POST /api/class-students/remove HTTP/1.1" 200 -
-2025-05-24 10:45:00,833 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:00] "GET /api/class-students/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:45:01,675 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:01] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:45:01,746 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:01] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:45:07,808 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:07] "POST /api/class-students/add HTTP/1.1" 200 -
-2025-05-24 10:45:08,229 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:08] "GET /api/class-students/by-class/17 HTTP/1.1" 200 -
-2025-05-24 10:45:09,204 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:09] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:45:09,355 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:09] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:45:12,548 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:12] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 10:45:16,433 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:16] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:45:16,543 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:16] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:45:28,500 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:28] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 10:45:38,029 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:38] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 10:45:45,012 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:45] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:45:45,184 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:45] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:45:45,741 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:45:45] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:51:22,858 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:22] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:51:22,889 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:22] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 10:51:23,053 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:23] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 10:51:23,073 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:23] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-24 10:51:23,110 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:23] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-24 10:51:47,089 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:47] "[32mGET /api/courses HTTP/1.1[0m" 308 -
-2025-05-24 10:51:47,141 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:47] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 10:51:49,438 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:49] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 10:51:57,398 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:57] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:51:57,436 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:57] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:51:57,729 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:51:57] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:52:39,753 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:52:39] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:52:39,759 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:52:39] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:52:39,855 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:52:39] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:52:48,461 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:52:48] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:52:48,469 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:52:48] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:52:48,547 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:52:48] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:53:57,978 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:53:57] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:53:57,978 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:53:57] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:54:26,113 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:54:26] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:54:26,522 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:54:26] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:54:28,485 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:54:28] "[35m[1mGET /api/user/ HTTP/1.1[0m" 500 -
-2025-05-24 10:54:56,193 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:54:56] "[35m[1mGET /api/meetings/by-class/14 HTTP/1.1[0m" 500 -
-2025-05-24 10:55:02,023 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:55:02] "[35m[1mGET /api/class-students/by-class/14 HTTP/1.1[0m" 500 -
-2025-05-24 10:55:59,515 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2025-05-24 13:51:05,585 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 13:51:05,585 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 13:51:18,735 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 13:51:18,735 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 18:23:14,611 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:8000
- * Running on http://192.168.1.7:8000
-2025-05-24 10:55:59,515 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-05-24 10:55:59,520 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 10:56:14,260 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 10:56:14,275 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 10:56:32,858 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:56:32] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:56:34,743 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:56:34] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:56:35,036 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:56:35] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:56:39,291 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:56:39] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:56:42,233 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:56:42] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:56:43,991 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:56:43] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:56:44,205 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:56:44] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:56:49,194 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:56:49] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:57:38,636 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:57:38] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:57:48,189 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:57:48] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:57:48,404 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:57:48] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:57:48,432 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:57:48] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:57:50,678 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:57:50] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:57:50,862 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:57:50] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:57:55,150 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:57:55] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:58:00,476 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:58:00] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:58:02,201 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:58:02] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:58:02,261 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:58:02] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:58:51,483 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:58:51] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:58:51,497 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:58:51] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:58:51,550 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:58:51] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:58:53,399 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:58:53] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:58:53,585 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:58:53] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:59:37,821 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:59:37] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:59:37,827 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:59:37] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:59:38,008 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:59:38] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:59:41,094 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:59:41] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:59:41,132 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:59:41] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 10:59:44,475 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:59:44] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:59:55,036 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:59:55] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 10:59:56,773 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:59:56] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 10:59:56,844 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 10:59:56] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:00:04,041 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:00:04] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:00:07,778 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:00:07] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:00:12,132 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:00:12] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:00:12,187 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:00:12] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:00:27,626 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:00:27] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:03:32,817 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:03:32] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:03:34,532 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:03:34] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:03:34,594 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:03:34] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:03:38,364 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:03:38] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:04:25,794 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:25] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-24 11:04:25,918 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:25] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-24 11:04:27,047 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:27] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:04:27,068 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:27] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-24 11:04:27,274 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:27] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 11:04:27,301 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:27] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 11:04:27,347 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:27] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-24 11:04:29,519 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:29] "[32mGET /api/courses HTTP/1.1[0m" 308 -
-2025-05-24 11:04:29,699 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:29] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 11:04:31,909 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:31] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 11:04:34,493 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:34] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:04:34,902 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:34] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:04:35,095 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:35] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:04:36,020 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:36] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:04:37,897 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:37] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:04:38,099 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:38] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:04:42,931 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:04:42] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:06:32,578 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:06:32] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:06:32,619 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:06:32] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:06:32,813 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:06:32] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:06:56,172 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:06:56] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:06:58,004 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:06:58] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:06:58,069 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:06:58] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:07:02,961 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:02] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:07:04,155 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:04] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 11:07:07,913 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:07] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 11:07:09,092 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:09] "[32mGET /api/admin/history HTTP/1.1[0m" 308 -
-2025-05-24 11:07:09,256 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:09] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-24 11:07:21,084 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:21] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:07:21,407 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:21] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:07:26,151 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:26] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 11:07:32,137 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:32] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:07:32,148 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:32] "GET /api/meetings/by-class/15 HTTP/1.1" 200 -
-2025-05-24 11:07:32,187 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:32] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:07:34,293 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:34] "GET /api/class-students/by-class/15 HTTP/1.1" 200 -
-2025-05-24 11:07:34,439 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:34] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:07:34,520 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:34] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:07:35,819 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:35] "GET /api/meetings/by-class/15 HTTP/1.1" 200 -
-2025-05-24 11:07:42,178 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:42] "GET /api/class-students/by-class/15 HTTP/1.1" 200 -
-2025-05-24 11:07:42,396 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:42] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:07:42,580 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:42] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:07:49,323 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:49] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 11:07:52,237 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:52] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:07:52,796 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:52] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:07:53,010 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:53] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:07:54,070 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:54] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:07:56,371 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:56] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:07:56,440 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:07:56] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:09:37,047 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:09:37] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 11:09:39,896 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:09:39] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:09:39,952 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:09:39] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:09:40,136 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:09:40] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:09:52,296 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:09:52] "[35m[1mPOST /api/meetings/create HTTP/1.1[0m" 201 -
-2025-05-24 11:09:52,904 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:09:52] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:09:59,624 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:09:59] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 11:10:03,869 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:10:03] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 11:10:03,871 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:10:03] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-24 11:10:04,029 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:10:04] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:10:04,039 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:10:04] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 11:10:33,948 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:10:33] "[35m[1mGET /api/admin/history/ HTTP/1.1[0m" 500 -
-2025-05-24 11:12:04,858 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:12:04] "[35m[1mGET /api/classes/by-course/4 HTTP/1.1[0m" 500 -
-2025-05-24 11:12:34,340 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.8.39:8000
+2025-05-24 18:23:14,613 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 18:23:14,617 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 18:23:28,179 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 18:23:28,179 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 18:44:27,483 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 18:44:27] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 18:44:27,682 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 18:44:27] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 18:44:28,229 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 18:44:28] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 18:44:28,252 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 18:44:28] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 18:44:28,268 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 18:44:28] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 18:44:28,288 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 18:44:28] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 18:44:28,421 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 18:44:28] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 18:45:08,831 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 18:45:09,692 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 18:45:09,692 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 18:45:09,709 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 18:45:09,709 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 18:45:09,709 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 18:45:09,709 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 18:45:09,709 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 18:45:09,721 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 18:45:09,721 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 18:45:09,723 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 18:45:09] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:00:38,117 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:00:38,995 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 19:00:38,996 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 19:00:39,008 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 19:00:39,008 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 19:00:39,009 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 19:00:39,010 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 19:00:39,011 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 19:00:39,013 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 19:00:39,013 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 19:00:39,016 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:00:39] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:07:33,729 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:07:34,167 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 19:07:34,167 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 19:07:34,186 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 19:07:34,186 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 19:07:34,187 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 19:07:34,187 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 19:07:34,188 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 19:07:34,190 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 19:07:34,190 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 19:07:34,190 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:07:34] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:12:13,328 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:8000
- * Running on http://192.168.1.7:8000
-2025-05-24 11:12:34,341 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-05-24 11:12:34,342 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 11:12:50,234 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 11:12:50,248 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 11:17:01,401 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:17:01] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
-2025-05-24 11:17:04,520 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:17:04] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:17:04,535 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:17:04] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:17:04,917 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:17:04] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:17:07,417 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:17:07] "GET /api/class-students/by-class/14 HTTP/1.1" 200 -
-2025-05-24 11:17:09,488 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:17:09] "[32mGET /api/user HTTP/1.1[0m" 308 -
-2025-05-24 11:17:09,701 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:17:09] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:21:02,893 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8000
- * Running on http://192.168.1.7:8000
-2025-05-24 11:21:02,894 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-05-24 11:21:02,898 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 11:21:18,716 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 11:21:18,733 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 11:25:20,515 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:20] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-24 11:25:21,944 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:21] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-24 11:25:23,461 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:23] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:25:23,501 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:23] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 11:25:23,526 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:23] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-24 11:25:23,566 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:23] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 11:25:23,715 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:23] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-24 11:25:44,548 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:25:44] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
-2025-05-24 11:28:55,944 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:55] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-24 11:28:56,310 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:56] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-24 11:28:57,319 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:57] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 11:28:57,545 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:57] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 11:28:57,570 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:57] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-24 11:28:57,624 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:57] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-24 11:28:57,625 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:28:57] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 11:35:01,049 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:35:01] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
-2025-05-24 11:39:03,113 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\attendance_service.py', reloading
-2025-05-24 11:39:03,941 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 11:39:32,809 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 11:41:24,316 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 11:41:40,515 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 11:41:40,526 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 11:42:39,425 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 11:42:39] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
-2025-05-24 11:44:10,677 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
-2025-05-24 11:44:11,501 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 11:44:27,466 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 11:44:27,471 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 11:50:00,959 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
-2025-05-24 11:50:01,884 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 11:58:27,802 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8000
- * Running on http://192.168.1.7:8000
-2025-05-24 11:58:27,802 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-05-24 11:58:27,815 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 11:58:41,717 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 11:58:41,721 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 12:37:10,023 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:10] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-24 12:37:10,328 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:10] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-24 12:37:11,925 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:11] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 12:37:11,955 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:11] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 12:37:11,985 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:11] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-24 12:37:12,070 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:12] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-24 12:37:12,094 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:12] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 12:37:28,883 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:37:28] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
-2025-05-24 12:38:24,690 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
-2025-05-24 12:38:25,478 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 12:38:40,314 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 12:38:40,330 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 12:39:47,127 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
-2025-05-24 12:39:47,814 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 12:40:00,825 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 12:40:00,844 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 12:41:07,459 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
-2025-05-24 12:41:08,159 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 12:41:20,564 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 12:41:20,574 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 12:41:28,094 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
-2025-05-24 12:41:28,789 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 12:41:41,606 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 12:41:41,623 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 12:41:48,015 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 12:41:48] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 401 -
-2025-05-24 13:15:32,617 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
-2025-05-24 13:15:33,455 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 13:15:56,149 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 13:15:56,166 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 13:16:11,793 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
-2025-05-24 13:16:12,498 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 13:16:25,690 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 13:16:25,702 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 13:16:52,589 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
-2025-05-24 13:16:53,287 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 13:17:06,533 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 13:17:06,541 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 13:18:40,019 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:40] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-24 13:18:40,299 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:40] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-24 13:18:41,698 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:41] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 13:18:41,729 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:41] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 13:18:41,761 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:41] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-24 13:18:41,850 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:41] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-24 13:18:42,623 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:42] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 13:18:50,638 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:18:50] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 401 -
-2025-05-24 13:19:42,988 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
-2025-05-24 13:19:43,703 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 13:19:57,230 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 13:19:57,246 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 13:20:06,073 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:20:06] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 401 -
-2025-05-24 13:21:40,696 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:8000
- * Running on http://192.168.1.7:8000
-2025-05-24 13:21:40,696 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
-2025-05-24 13:21:40,698 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 13:21:53,025 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 13:21:53,043 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 13:22:09,960 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
-2025-05-24 13:22:12,569 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
-2025-05-24 13:22:12,571 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
-2025-05-24 13:22:12,576 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
-2025-05-24 13:22:12,576 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
-2025-05-24 13:22:12,576 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
-2025-05-24 13:22:12,576 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
-2025-05-24 13:22:12,576 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
-2025-05-24 13:22:12,586 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
-2025-05-24 13:22:12,586 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
-2025-05-24 13:22:12,589 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:22:12] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
-2025-05-24 13:28:08,713 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
-2025-05-24 13:28:09,404 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 13:28:22,322 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 13:28:22,338 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 13:31:30,245 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:30] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-24 13:31:30,460 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:30] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-24 13:31:31,734 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:31] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 13:31:31,804 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:31] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-24 13:31:31,804 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:31] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-24 13:31:31,818 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:31] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 13:31:31,910 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:31] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 13:31:41,129 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
-2025-05-24 13:31:46,655 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
-2025-05-24 13:31:46,655 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
-2025-05-24 13:31:46,655 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
-2025-05-24 13:31:46,655 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
-2025-05-24 13:31:46,670 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
-2025-05-24 13:31:46,670 - src.database.api.services.hand_scan_service - ERROR - Error in predict_hand_owner: load_model() got an unexpected keyword argument 'compile'
-2025-05-24 13:31:46,672 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
-  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 106, in predict_hand_owner
+ * Running on http://192.168.8.39:8000
+2025-05-24 19:12:13,329 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 19:12:13,333 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:12:27,495 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:12:27,513 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:13:49,759 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:13:49] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 19:13:49,953 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:13:49] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 19:13:50,474 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:13:50] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 19:13:50,497 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:13:50] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 19:13:50,514 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:13:50] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 19:13:50,531 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:13:50] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 19:13:50,664 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:13:50] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 19:14:05,919 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:14:06,799 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 19:14:06,799 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 19:14:06,821 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 19:14:06,822 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 19:14:06,822 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 19:14:06,822 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 19:14:06,824 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 19:14:06,825 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 19:14:06,826 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 19:14:06,828 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:14:06] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:19:15,797 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 19:19:16,575 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:19:30,293 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:19:30,293 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:19:30,293 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:19:30,293 - src.database.api.services.hand_scan_service - ERROR - Error loading model: load_model() got an unexpected keyword argument 'compile'
+2025-05-24 19:19:30,293 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 38, in load_model
     model = load_model(model_path, compile=False)
 TypeError: load_model() got an unexpected keyword argument 'compile'
 
-2025-05-24 13:31:46,673 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
-2025-05-24 13:31:46,675 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
-2025-05-24 13:31:46,676 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
-2025-05-24 13:31:46,678 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:31:46] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
-2025-05-24 13:33:13,265 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
-2025-05-24 13:33:13,992 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 13:33:26,465 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 13:33:26,465 - werkzeug - INFO -  * Debugger PIN: 589-864-851
-2025-05-24 13:34:40,618 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:40] "POST /api/auth/login HTTP/1.1" 200 -
-2025-05-24 13:34:40,830 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:40] "GET /api/user/profile HTTP/1.1" 200 -
-2025-05-24 13:34:42,191 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:42] "GET /api/user/ HTTP/1.1" 200 -
-2025-05-24 13:34:42,219 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:42] "GET /api/courses/ HTTP/1.1" 200 -
-2025-05-24 13:34:42,234 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:42] "GET /api/classes/ HTTP/1.1" 200 -
-2025-05-24 13:34:42,269 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:42] "GET /api/admin/history/ HTTP/1.1" 200 -
-2025-05-24 13:34:42,351 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:42] "GET /api/meetings/all HTTP/1.1" 200 -
-2025-05-24 13:34:51,405 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
-2025-05-24 13:34:54,514 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
-2025-05-24 13:34:54,516 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
-2025-05-24 13:34:54,524 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
-2025-05-24 13:34:54,525 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
-2025-05-24 13:34:54,525 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
-2025-05-24 13:34:54,617 - src.database.api.services.hand_scan_service - ERROR - Error in predict_hand_owner: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+2025-05-24 19:19:30,361 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:19:30,366 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:20:30,135 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 19:20:30,830 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:20:43,884 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:20:43,884 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:20:43,884 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:20:43,884 - src.database.api.services.hand_scan_service - ERROR - Error loading model: load_model() got an unexpected keyword argument 'compile'
+2025-05-24 19:20:43,884 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 38, in load_model
+    model = load_model(model_path, compile=False)
+TypeError: load_model() got an unexpected keyword argument 'compile'
+
+2025-05-24 19:20:43,974 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:20:43,985 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:22:28,822 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:22:28] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 19:22:29,016 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:22:29] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 19:22:29,554 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:22:29] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 19:22:29,582 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:22:29] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 19:22:29,605 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:22:29] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 19:22:29,619 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:22:29] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 19:22:29,739 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:22:29] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 19:22:36,205 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:22:36,849 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 19:22:36,849 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 19:22:36,849 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 19:22:36,849 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 19:22:36,849 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 19:22:36,863 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 19:22:36,863 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 19:22:36,865 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 19:22:36,867 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 19:22:36,869 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:22:36] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:23:00,855 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:23:01,823 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 19:23:01,823 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 19:23:01,838 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 19:23:01,839 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 19:23:01,839 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 19:23:01,841 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 19:23:01,842 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 19:23:01,843 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 19:23:01,844 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 19:23:01,845 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:23:01] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:24:39,311 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 19:24:40,064 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:24:53,258 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:24:53,258 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:24:53,258 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:24:53,258 - src.database.api.services.hand_scan_service - ERROR - Error loading model: load_model() takes 0 positional arguments but 1 was given
+2025-05-24 19:24:53,269 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 38, in load_model
+    model = load_model(model_path)
+TypeError: load_model() takes 0 positional arguments but 1 was given
+
+2025-05-24 19:24:53,361 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:24:53,387 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:25:12,326 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 19:25:13,006 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:25:26,139 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:25:26,139 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:25:26,139 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:25:26,139 - src.database.api.services.hand_scan_service - ERROR - Error loading model: load_model() takes 0 positional arguments but 1 was given
+2025-05-24 19:25:26,154 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 38, in load_model
+    model = load_model(model_path)
+TypeError: load_model() takes 0 positional arguments but 1 was given
+
+2025-05-24 19:25:26,226 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:25:26,230 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:26:10,976 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:26:10,976 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:26:10,976 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:26:10,976 - src.database.api.services.hand_scan_service - ERROR - Error loading model: load_model() takes 0 positional arguments but 1 was given
+2025-05-24 19:26:10,976 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 38, in load_model
+    model = load_model(model_path)
+TypeError: load_model() takes 0 positional arguments but 1 was given
+
+2025-05-24 19:26:11,091 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.8.39:8000
+2025-05-24 19:26:11,091 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 19:26:11,093 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:26:23,993 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:26:23,994 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:26:23,995 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:26:23,995 - src.database.api.services.hand_scan_service - ERROR - Error loading model: load_model() takes 0 positional arguments but 1 was given
+2025-05-24 19:26:23,996 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 38, in load_model
+    model = load_model(model_path)
+TypeError: load_model() takes 0 positional arguments but 1 was given
+
+2025-05-24 19:26:24,071 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:26:24,081 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:26:41,108 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:26:41] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 19:26:41,286 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:26:41] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 19:26:41,756 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:26:41] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 19:26:41,760 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:26:41] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 19:26:41,810 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:26:41] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 19:26:41,906 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:26:41] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 19:26:41,944 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:26:41] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 19:26:49,595 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:26:50,266 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 19:26:50,267 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 19:26:50,279 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 19:26:50,280 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 19:26:50,280 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 19:26:50,282 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 19:26:50,282 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 19:26:50,284 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 19:26:50,284 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 19:26:50,286 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:26:50] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:28:29,937 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 19:28:30,726 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:28:43,818 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:28:43,818 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:28:43,834 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:28:43,895 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
 
 Exception encountered: Unrecognized keyword arguments: ['batch_shape']
-2025-05-24 13:34:54,669 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
-  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 72, in predict_hand_owner
-    model = load_model(model_path, compile=False)
+2025-05-24 19:28:43,895 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 38, in load_hand_model
+    model = load_model(model_path)
   File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
     return legacy_sm_saving_lib.load_model(
   File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
@@ -630,11 +226,738 @@ TypeError: Error when deserializing class 'InputLayer' using config={'batch_shap
 
 Exception encountered: Unrecognized keyword arguments: ['batch_shape']
 
-2025-05-24 13:34:54,671 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
-2025-05-24 13:34:54,673 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
-2025-05-24 13:34:54,673 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
-2025-05-24 13:34:54,676 - werkzeug - INFO - 192.168.1.6 - - [24/May/2025 13:34:54] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
-2025-05-24 13:35:33,516 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
-2025-05-24 13:35:34,236 - werkzeug - INFO -  * Restarting with stat
-2025-05-24 13:35:47,851 - werkzeug - WARNING -  * Debugger is active!
-2025-05-24 13:35:47,869 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:28:43,974 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:28:43,981 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:28:51,462 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 19:28:52,195 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:29:05,112 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:29:05,112 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:29:05,112 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:29:05,135 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:29:05,135 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 38, in load_hand_model
+    model = load_model(model_path)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:29:05,216 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:29:05,225 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:29:33,440 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:29:33,440 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:29:33,440 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:29:33,473 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:29:33,475 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 38, in load_hand_model
+    model = load_model(model_path)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:29:33,582 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.8.39:8000
+2025-05-24 19:29:33,582 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 19:29:33,589 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:29:46,340 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:29:46,340 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:29:46,340 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:29:46,378 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:29:46,381 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 38, in load_hand_model
+    model = load_model(model_path)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:29:46,454 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:29:46,463 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:29:47,392 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:29:49,348 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:29:49] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-05-24 19:31:14,996 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:31:14] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-24 19:31:15,205 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:31:15] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-24 19:31:15,747 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:31:15] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-24 19:31:15,768 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:31:15] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-24 19:31:15,788 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:31:15] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-24 19:31:15,812 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:31:15] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-24 19:31:15,940 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:31:15] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-24 19:31:28,563 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:31:29,233 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 19:31:29,233 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 19:31:29,233 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 19:31:29,233 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 19:31:29,233 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 19:31:29,249 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 19:31:29,249 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 19:31:29,252 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 19:31:29,252 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 19:31:29,254 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:31:29] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:39:51,704 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 19:39:52,592 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:40:06,242 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:40:06,247 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:40:06,247 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:40:06,273 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:40:06,275 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 41, in load_hand_model
+    model = load_model(model_path, custom_objects=custom_objects)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:40:06,353 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:40:06,362 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:40:38,657 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 19:40:39,402 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:40:52,455 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:40:52,455 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:40:52,455 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:40:52,488 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:40:52,491 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 41, in load_hand_model
+    model = load_model(model_path, custom_objects=custom_objects)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:40:52,598 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:40:52,601 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:41:07,316 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:41:08,689 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 19:41:08,689 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 19:41:08,702 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 19:41:08,702 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 19:41:08,702 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 19:41:08,702 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 19:41:08,713 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 19:41:08,715 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 19:41:08,715 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 19:41:08,718 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:41:08] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:41:36,671 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:41:36,671 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:41:36,671 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:41:36,693 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:41:36,693 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 41, in load_hand_model
+    model = load_model(model_path, custom_objects=custom_objects)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:41:36,795 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.8.39:8000
+2025-05-24 19:41:36,795 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 19:41:36,795 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:41:49,480 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:41:49,480 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:41:49,496 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:41:49,518 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:41:49,523 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 41, in load_hand_model
+    model = load_model(model_path, custom_objects=custom_objects)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:41:49,589 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:41:49,589 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:42:26,664 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:42:27,570 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 19:42:27,570 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 19:42:27,586 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 19:42:27,587 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 19:42:27,588 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 19:42:27,588 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 19:42:27,589 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 19:42:27,591 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 19:42:27,592 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 19:42:27,592 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:42:27] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:44:20,746 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 19:44:21,466 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:44:34,586 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:44:34,586 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:44:34,586 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:44:35,226 - tensorflow - WARNING - From C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-05-24 19:44:35,263 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:44:35,266 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 44, in load_hand_model
+    model = load_model(model_path, custom_objects=custom_objects)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:44:35,328 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:44:35,349 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:45:02,174 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 19:45:02,929 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:45:15,896 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:45:15,896 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:45:15,896 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:45:16,461 - tensorflow - WARNING - From C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-05-24 19:45:16,485 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:45:16,488 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 44, in load_hand_model
+    model = load_model(model_path, custom_objects=custom_objects)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:45:16,559 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:45:16,569 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 19:45:30,634 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-24 19:45:31,530 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-24 19:45:31,530 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-24 19:45:31,545 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-24 19:45:31,545 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-24 19:45:31,545 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-24 19:45:31,545 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-24 19:45:31,557 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-24 19:45:31,559 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-24 19:45:31,559 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-24 19:45:31,563 - werkzeug - INFO - 192.168.8.122 - - [24/May/2025 19:45:31] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-24 19:46:00,785 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:46:00,785 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:46:00,785 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:46:01,334 - tensorflow - WARNING - From C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-05-24 19:46:01,366 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:46:01,368 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 44, in load_hand_model
+    model = load_model(model_path, custom_objects=custom_objects)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:46:01,464 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.8.39:8000
+2025-05-24 19:46:01,465 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 19:46:01,468 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 19:46:14,310 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 19:46:14,311 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 19:46:14,312 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 19:46:14,978 - tensorflow - WARNING - From C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-05-24 19:46:15,001 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 19:46:15,004 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 44, in load_hand_model
+    model = load_model(model_path, custom_objects=custom_objects)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 19:46:15,090 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 19:46:15,106 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 20:09:14,937 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 20:09:14,937 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 20:09:14,937 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 20:09:15,487 - tensorflow - WARNING - From C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-05-24 20:09:15,516 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 20:09:15,520 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 44, in load_hand_model
+    model = load_model(model_path, custom_objects=custom_objects)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 20:09:15,617 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.8.39:8000
+2025-05-24 20:09:15,617 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-24 20:09:15,619 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 20:09:28,363 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 20:09:28,363 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 20:09:28,363 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 20:09:28,932 - tensorflow - WARNING - From C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-05-24 20:09:28,955 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 20:09:28,965 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 44, in load_hand_model
+    model = load_model(model_path, custom_objects=custom_objects)
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 20:09:29,037 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 20:09:29,046 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 20:12:16,545 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 20:12:17,280 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 20:12:31,437 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 20:12:31,437 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 20:12:31,437 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 20:12:32,002 - tensorflow - WARNING - From C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-05-24 20:12:32,023 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 20:12:32,025 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 44, in load_hand_model
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 20:12:32,103 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 20:12:32,105 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 20:13:44,564 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 20:13:45,251 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 20:13:57,961 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 20:13:57,961 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 20:13:57,961 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 20:13:58,524 - tensorflow - WARNING - From C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-05-24 20:13:58,544 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 20:13:58,544 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 46, in load_hand_model
+    model = tf.keras.models.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 20:13:58,618 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 20:13:58,628 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-24 20:14:40,985 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-24 20:14:41,701 - werkzeug - INFO -  * Restarting with stat
+2025-05-24 20:14:54,557 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-24 20:14:54,557 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-24 20:14:54,557 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-24 20:14:54,591 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-24 20:14:54,594 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 40, in load_hand_model
+    model = load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-24 20:14:54,660 - werkzeug - WARNING -  * Debugger is active!
+2025-05-24 20:14:54,677 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-25 09:23:57,991 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-25 09:23:57,991 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-25 09:23:57,991 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-25 09:23:58,643 - tensorflow - WARNING - From C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-05-25 09:23:58,674 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-25 09:23:58,676 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 44, in load_hand_model
+    model = tf.keras.models.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-25 09:23:58,852 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.7:8000
+2025-05-25 09:23:58,852 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-25 09:23:58,860 - werkzeug - INFO -  * Restarting with stat
+2025-05-25 09:24:13,816 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-25 09:24:13,817 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-25 09:24:13,818 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-25 09:24:14,516 - tensorflow - WARNING - From C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+2025-05-25 09:24:14,540 - src.database.api.services.hand_scan_service - ERROR - Error loading model: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+2025-05-25 09:24:14,543 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 44, in load_hand_model
+    model = tf.keras.models.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\saving\saving_api.py", line 262, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\keras\src\engine\base_layer.py", line 870, in from_config
+    raise TypeError(
+TypeError: Error when deserializing class 'InputLayer' using config={'batch_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'name': 'input_layer'}.
+
+Exception encountered: Unrecognized keyword arguments: ['batch_shape']
+
+2025-05-25 09:24:14,626 - werkzeug - WARNING -  * Debugger is active!
+2025-05-25 09:24:14,637 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-25 09:27:41,274 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:27:41] "POST /api/auth/login HTTP/1.1" 200 -
+2025-05-25 09:27:41,710 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:27:41] "GET /api/user/profile HTTP/1.1" 200 -
+2025-05-25 09:27:42,818 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:27:42] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-25 09:27:42,960 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:27:42] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-25 09:27:42,993 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:27:42] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-25 09:27:43,011 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:27:43] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-25 09:27:43,140 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:27:43] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-25 09:31:57,620 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:31:57] "[32mGET /api/courses HTTP/1.1[0m" 308 -
+2025-05-25 09:31:57,780 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:31:57] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-25 09:31:59,603 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:31:59] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-05-25 09:32:02,476 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:02] "[32mGET /api/user HTTP/1.1[0m" 308 -
+2025-05-25 09:32:02,566 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:02] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-25 09:32:03,492 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:03] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-05-25 09:32:15,335 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:15] "[35m[1mPOST /api/meetings/create HTTP/1.1[0m" 201 -
+2025-05-25 09:32:15,851 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:15] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-05-25 09:32:20,883 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:20] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-05-25 09:32:24,265 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:24] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-25 09:32:24,383 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:24] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-25 09:32:24,398 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:24] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-25 09:32:24,427 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:24] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-05-25 09:32:24,434 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:24] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-25 09:32:33,419 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-25 09:32:37,807 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-25 09:32:37,808 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-25 09:32:37,819 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-25 09:32:37,819 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-25 09:32:37,820 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-25 09:32:37,821 - src.database.api.services.hand_scan_service - ERROR - Model not loaded, cannot make prediction
+2025-05-25 09:32:37,821 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-25 09:32:37,823 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-25 09:32:37,823 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-25 09:32:37,823 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:32:37] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-25 09:48:19,423 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-25 09:48:19,423 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-25 09:48:19,423 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-25 09:48:21,379 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-25 09:48:21,379 - src.database.api.services.hand_scan_service - INFO - Model Summary:
+2025-05-25 09:48:21,920 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.7:8000
+2025-05-25 09:48:21,920 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-25 09:48:21,920 - werkzeug - INFO -  * Restarting with stat
+2025-05-25 09:48:30,266 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-25 09:48:30,267 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-25 09:48:30,268 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-25 09:48:31,918 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-25 09:48:31,918 - src.database.api.services.hand_scan_service - INFO - Model Summary:
+2025-05-25 09:48:32,235 - werkzeug - WARNING -  * Debugger is active!
+2025-05-25 09:48:32,235 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-25 09:49:00,592 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-25 09:49:05,172 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-25 09:49:05,174 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-25 09:49:05,186 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-25 09:49:05,187 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-25 09:49:05,188 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-25 09:49:05,188 - src.database.api.services.hand_scan_service - INFO - Preprocessing image for prediction
+2025-05-25 09:49:05,188 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-25 09:49:05,188 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-25 09:49:05,413 - src.database.api.services.hand_scan_service - INFO - Original image shape: (4160, 3120, 3)
+2025-05-25 09:49:05,413 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-25 09:49:05,451 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-25 09:49:05,451 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-25 09:49:05,468 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-25 09:49:05,468 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-25 09:49:05,470 - src.database.api.services.hand_scan_service - INFO - Making prediction with model
+2025-05-25 09:49:07,867 - src.database.api.services.hand_scan_service - INFO - Raw predictions shape: (1, 27)
+2025-05-25 09:49:07,883 - src.database.api.services.hand_scan_service - INFO - Raw predictions: [[3.5465005e-04 1.5729727e-05 7.3854503e-06 6.6122097e-06 3.6871670e-06
+  1.7090855e-04 3.5698549e-04 2.4807059e-05 6.8260459e-05 3.1905154e-07
+  7.2348712e-04 1.4291315e-01 3.3567798e-05 9.1811619e-04 3.0215356e-02
+  2.4329893e-05 6.8532659e-05 7.3937136e-01 1.7461484e-02 6.1819214e-02
+  1.4336272e-03 4.2780142e-05 3.1112367e-04 3.9664598e-04 2.3652694e-05
+  3.2322649e-03 1.9503261e-06]]
+2025-05-25 09:49:07,883 - src.database.api.services.hand_scan_service - INFO - Predicted class: 17 with confidence: 0.7394
+2025-05-25 09:49:07,895 - src.database.api.services.hand_scan_service - INFO - Creating new database session for user lookup
+2025-05-25 09:49:07,895 - src.database.api.services.hand_scan_service - INFO - Looking for user with hand_scan_class_index: 17
+2025-05-25 09:49:08,079 - src.database.api.services.hand_scan_service - INFO - Closing database session after user lookup
+2025-05-25 09:49:08,079 - src.database.api.services.hand_scan_service - ERROR - Error in predict_hand_owner: (psycopg2.ProgrammingError) can't adapt type 'numpy.int64'
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.password_hash AS users_password_hash, users.name AS users_name, users.nim AS users_nim, users.email AS users_email, users.phone AS users_phone, users.hand_left_path AS users_hand_left_path, users.hand_right_path AS users_hand_right_path, users.hand_scan_class_index AS users_hand_scan_class_index, users.role AS users_role 
+FROM users 
+WHERE users.hand_scan_class_index = %(hand_scan_class_index_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'hand_scan_class_index_1': 17, 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-05-25 09:49:08,265 - src.database.api.services.hand_scan_service - ERROR - Traceback: Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.ProgrammingError: can't adapt type 'numpy.int64'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\src\database\api\services\hand_scan_service.py", line 141, in predict_hand_owner
+    ).first()
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\orm\query.py", line 2759, in first
+    return self.limit(1)._iter().first()  # type: ignore
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\orm\query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1416, in execute
+    return meth(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\engine\base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\melia\Documents\PPL\scana-baru\backendnew-ScanA\.venv\lib\site-packages\sqlalchemy\engine\default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.ProgrammingError) can't adapt type 'numpy.int64'
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.password_hash AS users_password_hash, users.name AS users_name, users.nim AS users_nim, users.email AS users_email, users.phone AS users_phone, users.hand_left_path AS users_hand_left_path, users.hand_right_path AS users_hand_right_path, users.hand_scan_class_index AS users_hand_scan_class_index, users.role AS users_role 
+FROM users 
+WHERE users.hand_scan_class_index = %(hand_scan_class_index_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'hand_scan_class_index_1': 17, 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+
+2025-05-25 09:49:08,265 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: None, Confidence: 0.0
+2025-05-25 09:49:08,280 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-25 09:49:08,280 - src.database.api.controllers.hand_scan_controller - WARNING - Hand not recognized in the image
+2025-05-25 09:49:08,280 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:49:08] "[33mPOST /api/scan-hand HTTP/1.1[0m" 404 -
+2025-05-25 09:51:51,150 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-25 09:51:52,112 - werkzeug - INFO -  * Restarting with stat
+2025-05-25 09:52:00,375 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-25 09:52:00,375 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-25 09:52:00,375 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-25 09:52:02,082 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-25 09:52:02,083 - src.database.api.services.hand_scan_service - INFO - Model Summary:
+2025-05-25 09:52:02,415 - werkzeug - WARNING -  * Debugger is active!
+2025-05-25 09:52:02,426 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-25 09:52:15,441 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-25 09:52:20,639 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-25 09:52:20,639 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-25 09:52:20,659 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-25 09:52:20,659 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-25 09:52:20,660 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-25 09:52:20,661 - src.database.api.services.hand_scan_service - INFO - Preprocessing image for prediction
+2025-05-25 09:52:20,661 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-25 09:52:20,662 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-25 09:52:20,884 - src.database.api.services.hand_scan_service - INFO - Original image shape: (4160, 3120, 3)
+2025-05-25 09:52:20,884 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-25 09:52:20,909 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-25 09:52:20,915 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-25 09:52:20,915 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-25 09:52:20,918 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-25 09:52:20,918 - src.database.api.services.hand_scan_service - INFO - Making prediction with model
+2025-05-25 09:52:23,257 - src.database.api.services.hand_scan_service - INFO - Raw predictions shape: (1, 27)
+2025-05-25 09:52:23,273 - src.database.api.services.hand_scan_service - INFO - Raw predictions: [[3.6027021e-04 3.3492186e-05 2.0932967e-03 1.9373064e-04 3.8452649e-06
+  7.5131061e-04 3.8425726e-04 7.6902039e-02 1.4128379e-03 7.5815602e-05
+  2.1672422e-04 9.4241597e-02 2.7643982e-02 7.7178646e-03 9.8928930e-03
+  5.2191734e-02 1.5704916e-03 2.5077730e-02 1.0555349e-01 3.2063257e-02
+  2.2781548e-01 3.1914189e-01 1.9823075e-03 3.7874631e-03 4.4766669e-03
+  3.0806379e-03 1.3348395e-03]]
+2025-05-25 09:52:23,275 - src.database.api.services.hand_scan_service - INFO - Predicted class: 21 with confidence: 0.3191
+2025-05-25 09:52:23,275 - src.database.api.services.hand_scan_service - INFO - Creating new database session for user lookup
+2025-05-25 09:52:23,276 - src.database.api.services.hand_scan_service - INFO - Looking for user with hand_scan_class_index: 21
+2025-05-25 09:52:23,457 - src.database.api.services.hand_scan_service - INFO - Found matching user: Monica Aprilia Pandeiroth (ID: 26)
+2025-05-25 09:52:23,457 - src.database.api.services.hand_scan_service - INFO - Closing database session after user lookup
+2025-05-25 09:52:23,457 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: 26, Confidence: 0.3191418945789337
+2025-05-25 09:52:23,464 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-25 09:52:23,464 - src.database.api.controllers.hand_scan_controller - INFO - Recording attendance for student_id: 26
+2025-05-25 09:52:23,466 - src.database.api.controllers.hand_scan_controller - ERROR - Error processing hand scan: name 'meeting' is not defined
+2025-05-25 09:52:23,468 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:52:23] "[35m[1mPOST /api/scan-hand HTTP/1.1[0m" 500 -
+2025-05-25 09:52:56,993 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-25 09:52:57,872 - werkzeug - INFO -  * Restarting with stat
+2025-05-25 09:53:05,861 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-25 09:53:05,861 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-25 09:53:05,861 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-25 09:53:07,504 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-25 09:53:07,505 - src.database.api.services.hand_scan_service - INFO - Model Summary:
+2025-05-25 09:53:07,824 - werkzeug - WARNING -  * Debugger is active!
+2025-05-25 09:53:07,833 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-25 09:53:44,237 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-25 09:53:48,976 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-25 09:53:48,978 - src.database.api.controllers.hand_scan_controller - INFO - Ensuring upload directory exists: src/storage/uploads
+2025-05-25 09:53:48,990 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-25 09:53:48,991 - src.database.api.controllers.hand_scan_controller - INFO - Starting hand owner prediction
+2025-05-25 09:53:48,991 - src.database.api.services.hand_scan_service - INFO - Starting hand owner prediction
+2025-05-25 09:53:48,992 - src.database.api.services.hand_scan_service - INFO - Preprocessing image for prediction
+2025-05-25 09:53:48,993 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-25 09:53:48,993 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-25 09:53:49,224 - src.database.api.services.hand_scan_service - INFO - Original image shape: (4160, 3120, 3)
+2025-05-25 09:53:49,224 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-25 09:53:49,267 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-25 09:53:49,267 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-25 09:53:49,267 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-25 09:53:49,276 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-25 09:53:49,277 - src.database.api.services.hand_scan_service - INFO - Making prediction with model
+2025-05-25 09:53:51,619 - src.database.api.services.hand_scan_service - INFO - Raw predictions shape: (1, 27)
+2025-05-25 09:53:51,619 - src.database.api.services.hand_scan_service - INFO - Raw predictions: [[1.06795254e-04 2.22533636e-05 5.44698397e-03 4.90731909e-04
+  7.43583769e-06 8.68081523e-04 1.69523337e-04 1.24703487e-02
+  1.30610215e-03 4.42239871e-05 1.58847461e-03 4.61422615e-02
+  1.43322004e-02 9.20754764e-03 1.23179527e-02 5.46193011e-02
+  6.93401741e-03 1.13761224e-01 3.84428501e-01 3.56518589e-02
+  1.68180093e-01 8.86489302e-02 1.69884483e-03 5.76703483e-03
+  1.34090539e-02 2.05747019e-02 1.80561852e-03]]
+2025-05-25 09:53:51,619 - src.database.api.services.hand_scan_service - INFO - Predicted class: 18 with confidence: 0.3844
+2025-05-25 09:53:51,619 - src.database.api.services.hand_scan_service - INFO - Creating new database session for user lookup
+2025-05-25 09:53:51,619 - src.database.api.services.hand_scan_service - INFO - Looking for user with hand_scan_class_index: 18
+2025-05-25 09:53:51,806 - src.database.api.services.hand_scan_service - INFO - Found matching user: Vincensius Wijaya (ID: 23)
+2025-05-25 09:53:51,806 - src.database.api.services.hand_scan_service - INFO - Closing database session after user lookup
+2025-05-25 09:53:51,806 - src.database.api.controllers.hand_scan_controller - INFO - Prediction result - Student ID: 23, Confidence: 0.3844285011291504
+2025-05-25 09:53:51,806 - src.database.api.controllers.hand_scan_controller - INFO - Temporary file removed: src/storage/uploads\scan.jpg
+2025-05-25 09:53:51,806 - src.database.api.controllers.hand_scan_controller - INFO - Recording attendance for student_id: 23
+2025-05-25 09:53:51,816 - src.database.api.controllers.hand_scan_controller - ERROR - Error processing hand scan: name 'meeting' is not defined
+2025-05-25 09:53:51,819 - werkzeug - INFO - 192.168.1.8 - - [25/May/2025 09:53:51] "[35m[1mPOST /api/scan-hand HTTP/1.1[0m" 500 -
+2025-05-25 09:56:51,941 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
+2025-05-25 09:56:52,867 - werkzeug - INFO -  * Restarting with stat
+2025-05-25 09:57:00,950 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-25 09:57:00,950 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-25 09:57:00,950 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-25 09:57:02,643 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-25 09:57:02,644 - src.database.api.services.hand_scan_service - INFO - Model Summary:
+2025-05-25 09:57:02,951 - werkzeug - WARNING -  * Debugger is active!
+2025-05-25 09:57:02,971 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-25 09:57:37,043 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
+2025-05-25 09:57:37,834 - werkzeug - INFO -  * Restarting with stat
+2025-05-25 09:57:45,665 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-25 09:57:45,665 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-25 09:57:45,665 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-25 09:57:47,284 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-25 09:57:47,284 - src.database.api.services.hand_scan_service - INFO - Model Summary:
+2025-05-25 09:57:47,602 - werkzeug - WARNING -  * Debugger is active!
+2025-05-25 09:57:47,619 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-25 10:01:25,536 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
+2025-05-25 10:01:26,425 - werkzeug - INFO -  * Restarting with stat
+2025-05-25 10:01:34,710 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-25 10:01:34,711 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-25 10:01:34,712 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-25 10:01:36,369 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-25 10:01:36,370 - src.database.api.services.hand_scan_service - INFO - Model Summary:
+2025-05-25 10:01:36,693 - werkzeug - WARNING -  * Debugger is active!
+2025-05-25 10:01:36,713 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-25 10:02:04,286 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\hand_scan_controller.py', reloading
