@@ -1,5 +1,7 @@
 from src.database.config import SessionLocal
 from src.database.models import Meeting, Class, Course
+from sqlalchemy import func, and_
+from src.database.models import Attendance, ClassStudent
 from datetime import datetime
 import calendar
 
@@ -31,10 +33,32 @@ def create_meeting(class_id, date, start_time, end_time):
 
 def get_meetings_by_class(class_id):
     session = SessionLocal()
-    meetings = session.query(Meeting).filter(
-        Meeting.class_id == class_id).order_by(Meeting.date.asc()).all()
-    session.close()
-    return meetings
+    try:
+        # Subquery untuk menghitung total siswa di kelas
+        total_students_subq = session.query(
+            func.count(ClassStudent.id)
+        ).filter(
+            ClassStudent.class_id == class_id
+        ).scalar_subquery()
+
+        # Query utama untuk mendapatkan pertemuan dengan jumlah kehadiran
+        meetings = session.query(
+            Meeting,
+            func.count(Attendance.id).label('attendance_count'),
+            total_students_subq.label('total_students')
+        ).outerjoin(
+            Attendance, and_(
+                Attendance.meeting_id == Meeting.id,
+                Attendance.status == 'Hadir'
+            )
+        ).filter(
+            Meeting.class_id == class_id
+        ).group_by(Meeting.id).order_by(Meeting.date.asc()).all()
+
+        return meetings
+    finally:
+        session.close()
+
 
 
 def get_all_meetings():

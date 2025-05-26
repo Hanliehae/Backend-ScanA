@@ -36,13 +36,22 @@ def create_meeting():
 @meeting_bp.route('/by-class/<int:class_id>', methods=['GET'])
 @login_required
 def get_meetings_by_class(class_id):
-    meetings = meeting_service.get_meetings_by_class(class_id)
-    meeting_list = [{
-        "id": m.id,
-        "date": m.date.strftime('%Y-%m-%d'),
-        "start_time": m.start_time,
-        "end_time": m.end_time
-    } for m in meetings]
+    meetings_data = meeting_service.get_meetings_by_class(class_id)
+    
+    meeting_list = []
+    for meeting, attendance_count, total_students in meetings_data:
+        # Pastikan attendance_count tidak melebihi total_students
+        attendance_count = min(attendance_count, total_students) if total_students > 0 else 0
+        
+        meeting_list.append({
+            "id": meeting.id,
+            "date": meeting.date.strftime('%Y-%m-%d'),
+            "start_time": meeting.start_time,
+            "end_time": meeting.end_time,
+            "attendance_count": attendance_count,
+            "total_students": total_students,
+            "attendance_percentage": round((attendance_count / total_students * 100), 2) if total_students > 0 else 0
+        })
 
     return {"meetings": meeting_list}, 200
 
