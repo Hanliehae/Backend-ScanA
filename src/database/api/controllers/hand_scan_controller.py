@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 from src.database.api.services import hand_scan_service
 from src.utils.jwt_helper import admin_required
 from src.database.config import SessionLocal
-from src.database.models import Course, Class, Meeting
+from src.database.models import Course, Class, Meeting, User
 from datetime import datetime
 import logging
 import traceback
@@ -64,112 +64,129 @@ def get_active_meeting(course_id):
 def scan_hand():
     logger.info("Received hand scan request")
     
-    if 'image' not in request.files:
-        logger.warning("No image file provided in request")
-        return jsonify({
-            "success": False,
-            "message": "No image file provided"
-        }), 400
-    
-    file = request.files['image']
-    course_id = request.form.get('course_id')
-    scan_type = request.form.get('scan_type')  # Default to 'in' if not specified
-    
-    if not course_id:
-        logger.warning("Course ID not provided in request")
-        return jsonify({
-            "success": False,
-            "message": "Course ID is required"
-        }), 400
-    
-    if scan_type not in ['in', 'out']:
-        logger.warning(f"Invalid scan type: {scan_type}")
-        return jsonify({
-            "success": False,
-            "message": "Scan type must be either 'in' or 'out'"
-        }), 400
-    
-    if file.filename == '':
-        logger.warning("Empty filename provided")
-        return jsonify({
-            "success": False,
-            "message": "No selected file"
-        }), 400
+    try:
+        if 'image' not in request.files:
+            logger.warning("No image file provided in request")
+            return jsonify({
+                "success": False,
+                "message": "No image file provided",
+                "error": "MISSING_IMAGE_FILE"
+            }), 400
+        
+        file = request.files['image']
+        course_id = request.form.get('course_id')
+        scan_type = request.form.get('scan_type', 'in')  # Default to 'in' if not specified
+        
+        if not course_id:
+            logger.warning("Course ID not provided in request")
+            return jsonify({
+                "success": False,
+                "message": "Course ID is required",
+                "error": "MISSING_COURSE_ID"
+            }), 400
+        
+        if scan_type not in ['in', 'out']:
+            logger.warning(f"Invalid scan type: {scan_type}")
+            return jsonify({
+                "success": False,
+                "message": "Scan type must be either 'in' or 'out'",
+                "error": "INVALID_SCAN_TYPE"
+            }), 400
+        
+        if file.filename == '':
+            logger.warning("Empty filename provided")
+            return jsonify({
+                "success": False,
+                "message": "No selected file",
+                "error": "EMPTY_FILENAME"
+            }), 400
 
-    if file and allowed_file(file.filename):
+        if not (file and allowed_file(file.filename)):
+            logger.warning(f"Invalid file type: {file.filename}")
+            return jsonify({
+                "success": False,
+                "message": "Tipe file tidak valid",
+                "error": "INVALID_FILE_TYPE"
+            }), 400
+
         filename = secure_filename(file.filename)
         file_path = os.path.join(UPLOAD_FOLDER, filename)
         logger.info(f"Processing file: {filename}")
 
         # Buat direktori jika belum ada
         os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-        logger.info(f"Ensuring upload directory exists: {UPLOAD_FOLDER}")
         
-        try:
-            # Get active meeting for the course
-            meeting = get_active_meeting(int(course_id))
-            if not meeting:
-                return jsonify({
-                    "success": False,
-                    "message": "Tidak ada pertemuan aktif untuk mata kuliah ini"
-                }), 400
-
-            file.save(file_path)
-            logger.info(f"File saved successfully at: {file_path}")
-
-            # Prediksi pemilik telapak tangan
-            logger.info("Starting hand owner prediction")
-            student_id, confidence = hand_scan_service.predict_hand_owner(file_path)
-            logger.info(f"Prediction result - Student ID: {student_id}, Confidence: {confidence}")
-
-            # Hapus file setelah prediksi
-            os.remove(file_path)
-            logger.info(f"Temporary file removed: {file_path}")
-
-            if student_id is None:
-                logger.warning("Hand not recognized in the image")
-                return jsonify({
-                    "success": False,
-                    "message": "Telapak tangan tidak dikenali"
-                }), 404
-
-            # Record kehadiran
-            logger.info(f"Recording attendance for student_id: {student_id} with scan_type: {scan_type}")
-            attendance = hand_scan_service.record_attendance(student_id, meeting.id, scan_type)
-            
-            if attendance is None:
-                logger.error("Failed to record attendance")
-                return jsonify({
-                    "success": False,
-                    "message": "Gagal mencatat kehadiran"
-                }), 400
-
-            return jsonify({
-                "success": True,
-                "message": f"Kehadiran {scan_type} berhasil dicatat",
-                "data": {
-                    "student_id": student_id,
-                    "confidence": confidence,
-                    "meeting_id": meeting.id,
-                    "attendance_id": attendance.id,
-                    "scan_type": scan_type
-                }
-            }), 200
-
-        except Exception as e:
-            logger.error(f"Error processing hand scan: {str(e)}")
-            logger.error(f"Traceback: {traceback.format_exc()}")
-            # Hapus file jika terjadi error
-            if os.path.exists(file_path):
-                logger.info(f"Removing file after error: {file_path}")
-                os.remove(file_path)
+        # Get active meeting for the course
+        meeting = get_active_meeting(int(course_id))
+        if not meeting:
             return jsonify({
                 "success": False,
-                "message": "Terjadi kesalahan saat memproses scan"
-            }), 500
+                "message": "Tidak ada pertemuan aktif untuk mata kuliah ini",
+                "error": "NO_ACTIVE_MEETING"
+            }), 400
 
-    logger.warning(f"Invalid file type: {file.filename}")
-    return jsonify({
-        "success": False,
-        "message": "Tipe file tidak valid"
-    }), 400
+        file.save(file_path)
+        logger.info(f"File saved successfully at: {file_path}")
+
+        # Prediksi pemilik telapak tangan
+        student_id, confidence, error = hand_scan_service.predict_hand_owner(file_path)
+        if error:
+            os.remove(file_path)
+            return jsonify({
+                "success": False,
+                "message": f"{error}",
+                "error": "HAND_PREDICTION_ERROR"
+            }), 400
+
+        # Hapus file setelah prediksi
+        os.remove(file_path)
+
+        if student_id is None:
+            return jsonify({
+                "success": False,
+                "message": "Telapak tangan tidak dikenali",
+                "error": "HAND_NOT_RECOGNIZED",
+                "confidence": float(confidence)
+            }), 404
+
+        # Record kehadiran
+        attendance, error = hand_scan_service.record_attendance(student_id, meeting.id, scan_type)
+        if error:
+            return jsonify({
+                "success": False,
+                "message": f"{error}",
+                "error": "ATTENDANCE_ERROR"
+            }), 400
+
+        # Get student name
+        db = SessionLocal()
+        student = db.query(User).filter(User.id == student_id).first()
+        student_name = student.name if student else "Mahasiswa"
+        db.close()
+
+        tipe_scan = 'check-out' if scan_type == 'out' else 'check-in'
+
+        return jsonify({
+            "success": True,
+            "message": f"{student_name} berhasil {tipe_scan}",
+            "data": {
+                "student_id": student_id,
+                "student_name": student_name,
+                "confidence": float(confidence),
+                "meeting_id": meeting.id,
+                "attendance_id": attendance.id,
+                "scan_type": scan_type
+            }
+        }), 200
+
+    except Exception as e:
+        logger.error(f"Unexpected error processing hand scan: {str(e)}")
+        logger.error(f"Traceback: {traceback.format_exc()}")
+        if 'file_path' in locals() and os.path.exists(file_path):
+            os.remove(file_path)
+        return jsonify({
+            "success": False,
+            "message": "Terjadi kesalahan tidak terduga saat memproses scan",
+            "error": "UNEXPECTED_ERROR",
+            "details": str(e)
+        }), 500

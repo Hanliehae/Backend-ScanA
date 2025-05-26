@@ -48,9 +48,9 @@ def load_hand_model():
             )
             logger.info("Model loaded successfully")
             
-            # Log model summary
-            logger.info("Model Summary:")
-            model.summary(print_fn=logger.info)
+            # # Log model summary
+            # logger.info("Model Summary:")
+            # model.summary(print_fn=logger.info)
         else:
             logger.error(f"Model file not found at: {model_path}")
             model = None
@@ -106,144 +106,104 @@ def preprocess_image(image):
 def predict_hand_owner(image):
     global model
     try:
-        logger.info("Starting hand owner prediction")
         if model is None:
-            logger.error("Model not loaded, cannot make prediction")
-            return None, 0.0
-        # Preprocess image
-        logger.info("Preprocessing image for prediction")
+            return None, 0.0, "Model not loaded"
+            
         img_array = preprocess_image(image)
         if img_array is None:
-            logger.error("Image preprocessing failed")
-            return None, 0.0
-        # Make prediction
-        logger.info("Making prediction with model")
+            return None, 0.0, "Gagal memproses gambar"
+            
         predictions = model.predict(img_array, verbose=0)
-        logger.info(f"Raw predictions shape: {predictions.shape}")
-        logger.info(f"Raw predictions: {predictions}")
-        # Get the highest confidence prediction
-        predicted_class = int(np.argmax(predictions[0]))  # Convert to Python int
+        predicted_class = int(np.argmax(predictions[0]))
         confidence = float(predictions[0][predicted_class])
         
-        logger.info(f"Predicted class: {predicted_class} with confidence: {confidence:.4f}")
-        # Check if confidence is high enough
-        if confidence < 0.2:  # 20% confidence threshold
-            logger.warning(f"Confidence too low: {confidence:.4f}")
-            return None, confidence
-
-        # Get user with matching hand_scan_class_index
-        logger.info("Creating new database session for user lookup")
-        db = SessionLocal()
-        try:
-            logger.info(f"Looking for user with hand_scan_class_index: {predicted_class}")
-            user = db.query(User).filter(
-                User.hand_scan_class_index == predicted_class
-            ).first()
+        if confidence < 0.3:
+            return None, confidence, f"Tingkat kepercayaan terlalu rendah: {confidence}"
             
-            if not user:
-                logger.warning(f"No user found with hand_scan_class_index: {predicted_class}")
-                return None, confidence
-            logger.info(f"Found matching user: {user.name} (ID: {user.id})")
-            return user.id, confidence
-        finally:
-            logger.info("Closing database session after user lookup")
-            db.close()
-    except Exception as e:
-        logger.error(f"Error in predict_hand_owner: {str(e)}")
-        logger.error(f"Traceback: {traceback.format_exc()}")
-        return None, 0.0
-    
-def record_attendance(user_id, meeting_id, scan_type='in'):
-    logger.info("Creating new database session for attendance recording")
-    db = SessionLocal()
-    try:
-        logger.info(f"Starting attendance recording process for user_id: {user_id}, meeting_id: {meeting_id}, scan_type: {scan_type}")
+        db = SessionLocal()
+        user = db.query(User).filter(
+            User.hand_scan_class_index == predicted_class
+        ).first()
+        db.close()
         
-        # 1. Check if user exists
-        logger.info(f"Checking if user exists with id: {user_id}")
+        if not user:
+            return None, confidence, "Pengguna tidak ditemukan"
+            
+        return user.id, confidence, None
+        
+    except Exception as e:
+        logger.error(f"Prediction error: {str(e)}")
+        return None, 0.0, f"Kesalahan prediksi: {str(e)}"
+
+def record_attendance(user_id, meeting_id, scan_type='in'):
+    try:
+        db = SessionLocal()
+        
+        # Check user
         user = db.query(User).filter(User.id == user_id).first()
         if not user:
-            logger.error(f"User not found with id: {user_id}")
-            return None
-        logger.info(f"Found user: {user.name} (ID: {user.id})")
-        
-        # 2. Check if meeting exists
-        logger.info(f"Checking if meeting exists with id: {meeting_id}")
+            db.close()
+            return None, "Mahasiswa tidak ditemukan"
+            
+        # Check meeting
         meeting = db.query(Meeting).filter(Meeting.id == meeting_id).first()
         if not meeting:
-            logger.error(f"Meeting not found: {meeting_id}")
-            return None
-        logger.info(f"Found meeting: {meeting.id} for class_id: {meeting.class_id}")
-        
-        # 3. Get class_student record
-        logger.info(f"Looking for class_student record for student {user.name} in class {meeting.class_id}")
+            db.close()
+            return None, "Pertemuan tidak ditemukan"
+            
+        # Check class enrollment
         class_student = db.query(ClassStudent).filter(
             ClassStudent.student_id == user_id,
             ClassStudent.class_id == meeting.class_id
         ).first()
         if not class_student:
-            logger.error(f"Student {user.name} (ID: {user.id}) is not enrolled in class {meeting.class_id}")
-            return None
-        logger.info(f"Found class_student record: {class_student.id}")
-        
-        # 4. Check if attendance already exists
-        logger.info(f"Checking for existing attendance record")
+            db.close()
+            return None, f"{user.name} tidak terdaftar di kelas ini"
+            
+        current_time = datetime.now()
         existing_attendance = db.query(Attendance).filter(
             Attendance.meeting_id == meeting_id,
             Attendance.class_student_id == class_student.id
         ).first()
 
-        current_time = datetime.now()
-
         if existing_attendance:
-            logger.info(f"Found existing attendance record: {existing_attendance.id}")
-            
             if scan_type == 'in':
                 if existing_attendance.check_in_time:
-                    logger.warning("Student already checked in")
-                    return None
-                logger.info("Recording check-in time")
+                    db.close()
+                    return None, f"{user.name} sudah melakukan check-in sebelumnya"
                 existing_attendance.check_in_time = current_time
                 existing_attendance.status = "Hadir"
-            else:  # scan_type == 'out'
+            else:
                 if not existing_attendance.check_in_time:
-                    logger.warning("Student has not checked in yet")
-                    return None
+                    db.close()
+                    return None, f"{user.name} belum check-in"
                 if existing_attendance.check_out_time:
-                    logger.warning("Student already checked out")
-                    return None
-                logger.info("Recording check-out time")
+                    db.close()
+                    return None, f"{user.name} sudah melakukan check-out sebelumnya"
                 existing_attendance.check_out_time = current_time
             
-            logger.info("Committing attendance update to database")
             db.commit()
-            logger.info(f"Successfully updated attendance record: {existing_attendance.id}")
-            return existing_attendance
+            db.close()
+            return existing_attendance, None
         
-        # 5. Create new attendance record for check-in
         if scan_type == 'out':
-            logger.warning("Cannot check out without checking in first")
-            return None
+            db.close()
+            return None, "Tidak bisa check-out sebelum check-in"
             
-        logger.info("Creating new attendance record for check-in")
         attendance = Attendance(
             class_student_id=class_student.id,
             meeting_id=meeting_id,
             check_in_time=current_time,
             status="Hadir"
         )
-        logger.info("Adding new attendance record to database")
         db.add(attendance)
-        logger.info("Committing new attendance record to database")
         db.commit()
-        logger.info(f"Successfully created new attendance record: {attendance.id}")
-        return attendance
-    except Exception as e:
-        logger.error(f"Error in record_attendance: {str(e)}")
-        logger.error(f"Traceback: {traceback.format_exc()}")
-        logger.info("Rolling back database transaction due to error")
-        db.rollback()
-        return None
-    finally:
-        logger.info("Closing database session after attendance recording")
         db.close()
+        return attendance, None
+        
+    except Exception as e:
+        logger.error(f"Attendance error: {str(e)}")
+        if 'db' in locals():
+            db.rollback()
+            db.close()
+        return None, f"Kesalahan database: {str(e)}"
