@@ -5109,3 +5109,8 @@ sqlalchemy.orm.exc.DetachedInstanceError: Instance <Attendance at 0x1ba86bf7a00>
 2025-05-26 11:04:33,140 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 11:04:33] "GET /api/meetings/all HTTP/1.1" 200 -
 2025-05-26 11:04:34,339 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 11:04:34] "[32mGET /api/admin/history HTTP/1.1[0m" 308 -
 2025-05-26 11:04:34,400 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 11:04:34] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-26 11:05:27,795 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 11:05:27] "GET /api/courses/ HTTP/1.1" 200 -
+2025-05-26 11:05:27,798 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 11:05:27] "GET /api/user/ HTTP/1.1" 200 -
+2025-05-26 11:05:27,810 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 11:05:27] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-26 11:05:27,814 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 11:05:27] "GET /api/classes/ HTTP/1.1" 200 -
+2025-05-26 11:05:27,936 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 11:05:27] "GET /api/meetings/all HTTP/1.1" 200 -
