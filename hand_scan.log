@@ -5576,3 +5576,38 @@ sqlalchemy.orm.exc.DetachedInstanceError: Instance <Attendance at 0x265423303d0>
 2025-05-26 12:00:44,566 - werkzeug - WARNING -  * Debugger is active!
 2025-05-26 12:00:44,584 - werkzeug - INFO -  * Debugger PIN: 589-864-851
 2025-05-26 12:01:11,638 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\hand_scan_service.py', reloading
+2025-05-26 12:01:12,423 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 12:01:20,638 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-26 12:01:20,638 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-26 12:01:20,638 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-26 12:01:22,258 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-26 12:01:22,331 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 12:01:22,333 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-26 12:01:37,005 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-26 12:01:37,388 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-26 12:01:37,388 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-26 12:01:37,388 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-26 12:01:37,388 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-26 12:01:37,532 - src.database.api.services.hand_scan_service - INFO - Original image shape: (3060, 4080, 3)
+2025-05-26 12:01:37,532 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-26 12:01:37,567 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-26 12:01:37,570 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-26 12:01:37,570 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-26 12:01:37,577 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-26 12:01:40,013 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 12:01:40] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-05-26 12:01:52,212 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-26 12:01:52,868 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-26 12:01:52,868 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-26 12:01:52,868 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-26 12:01:52,868 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-26 12:01:53,002 - src.database.api.services.hand_scan_service - INFO - Original image shape: (3060, 4080, 3)
+2025-05-26 12:01:53,002 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-26 12:01:53,013 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-26 12:01:53,022 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-26 12:01:53,024 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-26 12:01:53,024 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-26 12:01:53,218 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 12:01:53] "POST /api/scan-hand HTTP/1.1" 200 -
+2025-05-26 12:01:59,057 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 12:01:59] "[32mGET /api/admin/history HTTP/1.1[0m" 308 -
+2025-05-26 12:01:59,231 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 12:01:59] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-05-26 12:02:19,607 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 12:02:19] "[32mGET /api/admin/history HTTP/1.1[0m" 308 -
+2025-05-26 12:02:19,638 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 12:02:19] "GET /api/admin/history/ HTTP/1.1" 200 -
