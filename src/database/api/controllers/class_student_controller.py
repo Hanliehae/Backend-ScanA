@@ -1,6 +1,8 @@
 from flask import Blueprint, request
 from src.database.api.services import class_student_service
 from src.utils.jwt_helper import admin_required, login_required
+from src.database.config import SessionLocal
+from src.database.models import Meeting
 
 class_student_bp = Blueprint(
     'class_student', __name__, url_prefix='/api/class-students')
@@ -29,16 +31,30 @@ def add_students():
 @class_student_bp.route('/by-class/<int:class_id>', methods=['GET'])
 @login_required
 def get_students_by_class(class_id):
-    students = class_student_service.get_students_in_class(class_id)
-    student_list = [{
-        "id": s.id,
-        "nim": s.nim,
-        "name": s.name,
-        "email": s.email,
-        "phone": s.phone
-    } for s in students]
+    students_data = class_student_service.get_students_in_class(class_id)
+    
+    # Get total meetings in this class for percentage calculation
+    session = SessionLocal()
+    total_meetings = session.query(Meeting).filter(
+        Meeting.class_id == class_id
+    ).count()
+    session.close()
 
-    return {"students": student_list}, 200
+    student_list = [{
+        "id": data["user"].id,
+        "nim": data["user"].nim,
+        "name": data["user"].name,
+        "email": data["user"].email,
+        "phone": data["user"].phone,
+        "attendance_count": data["attendance_count"],
+        "total_meetings": total_meetings,
+        "attendance_percentage": round((data["attendance_count"] / total_meetings * 100), 2) if total_meetings > 0 else 0
+    } for data in students_data]
+
+    return {
+        "students": student_list,
+        "total_meetings": total_meetings
+    }, 200
 
 
 @class_student_bp.route('/remove', methods=['POST'])

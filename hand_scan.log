@@ -4333,3 +4333,88 @@ sqlalchemy.orm.exc.DetachedInstanceError: Instance <Attendance at 0x1dcf101b640>
 2025-05-26 09:54:44,338 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
 2025-05-26 09:54:44,407 - werkzeug - WARNING -  * Debugger is active!
 2025-05-26 09:54:44,416 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-26 09:57:51,631 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-26 09:57:51,647 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-26 09:57:51,647 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-26 09:57:53,245 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-26 09:57:53,339 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.205.39:8000
+2025-05-26 09:57:53,339 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-26 09:57:53,339 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 09:58:01,204 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-26 09:58:01,204 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-26 09:58:01,204 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-26 09:58:02,827 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-26 09:58:02,903 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 09:58:02,905 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-26 09:58:05,733 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-26 09:58:06,294 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-26 09:58:06,464 - src.database.api.controllers.hand_scan_controller - INFO - Found active meeting: 26 for course: 4
+2025-05-26 09:58:06,476 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-26 09:58:06,476 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-26 09:58:06,476 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-26 09:58:06,649 - src.database.api.services.hand_scan_service - INFO - Original image shape: (4080, 3060, 3)
+2025-05-26 09:58:06,649 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-26 09:58:06,676 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-26 09:58:06,679 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-26 09:58:06,683 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-26 09:58:06,683 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-26 09:58:08,836 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 09:58:08] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-05-26 09:58:17,931 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-26 09:58:18,582 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-26 09:58:18,588 - src.database.api.controllers.hand_scan_controller - INFO - Found active meeting: 26 for course: 4
+2025-05-26 09:58:18,594 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-26 09:58:18,594 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-26 09:58:18,594 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-26 09:58:18,781 - src.database.api.services.hand_scan_service - INFO - Original image shape: (4080, 3060, 3)
+2025-05-26 09:58:18,781 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-26 09:58:18,792 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-26 09:58:18,799 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-26 09:58:18,800 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-26 09:58:18,801 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-26 09:58:18,972 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 09:58:18] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-05-26 09:58:33,030 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-26 09:58:33,503 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-26 09:58:33,503 - src.database.api.controllers.hand_scan_controller - INFO - Found active meeting: 26 for course: 4
+2025-05-26 09:58:33,526 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-26 09:58:33,527 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-26 09:58:33,528 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-26 09:58:33,708 - src.database.api.services.hand_scan_service - INFO - Original image shape: (4080, 3060, 3)
+2025-05-26 09:58:33,710 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-26 09:58:33,723 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-26 09:58:33,724 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-26 09:58:33,724 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-26 09:58:33,730 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-26 09:58:34,035 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 09:58:34] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-05-26 09:58:42,918 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-05-26 09:58:43,484 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-05-26 09:58:43,484 - src.database.api.controllers.hand_scan_controller - INFO - Found active meeting: 26 for course: 4
+2025-05-26 09:58:43,513 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-05-26 09:58:43,513 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-05-26 09:58:43,513 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-05-26 09:58:43,686 - src.database.api.services.hand_scan_service - INFO - Original image shape: (4080, 3060, 3)
+2025-05-26 09:58:43,686 - src.database.api.services.hand_scan_service - INFO - Converting BGR to RGB
+2025-05-26 09:58:43,710 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-05-26 09:58:43,710 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-05-26 09:58:43,710 - src.database.api.services.hand_scan_service - INFO - Adding batch dimension
+2025-05-26 09:58:43,717 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 3)
+2025-05-26 09:58:43,889 - werkzeug - INFO - 192.168.205.33 - - [26/May/2025 09:58:43] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-05-26 10:15:41,969 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\class_student_service.py', reloading
+2025-05-26 10:15:42,953 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 10:15:52,182 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-26 10:15:52,182 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-26 10:15:52,189 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-26 10:15:53,889 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-26 10:15:53,959 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 10:15:53,969 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-26 10:16:59,666 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\class_student_service.py', reloading
+2025-05-26 10:17:00,457 - werkzeug - INFO -  * Restarting with stat
+2025-05-26 10:17:09,798 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-05-26 10:17:09,799 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\hand_recognition_model.h5
+2025-05-26 10:17:09,799 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-05-26 10:17:11,470 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-05-26 10:17:11,543 - werkzeug - WARNING -  * Debugger is active!
+2025-05-26 10:17:11,552 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-05-26 10:18:35,847 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\class_student_controller.py', reloading
