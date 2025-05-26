@@ -183,6 +183,7 @@ def record_attendance(user_id, meeting_id, scan_type='in'):
                 existing_attendance.check_out_time = current_time
             
             db.commit()
+            db.refresh(existing_attendance)  # Refresh attendance object before closing session
             db.close()
             return existing_attendance, None
         
@@ -198,6 +199,7 @@ def record_attendance(user_id, meeting_id, scan_type='in'):
         )
         db.add(attendance)
         db.commit()
+        db.refresh(attendance)  # Refresh attendance object before closing session
         db.close()
         return attendance, None
         

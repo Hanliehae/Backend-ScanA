@@ -74,15 +74,15 @@ def scan_hand():
             }), 400
         
         file = request.files['image']
-        course_id = request.form.get('course_id')
+        meeting_id = request.form.get('meeting_id')
         scan_type = request.form.get('scan_type', 'in')  # Default to 'in' if not specified
         
-        if not course_id:
-            logger.warning("Course ID not provided in request")
+        if not meeting_id:
+            logger.warning("Meeting ID not provided in request")
             return jsonify({
                 "success": False,
-                "message": "Course ID is required",
-                "error": "MISSING_COURSE_ID"
+                "message": "Meeting ID is required",
+                "error": "MISSING_MEETING_ID"
             }), 400
         
         if scan_type not in ['in', 'out']:
@@ -116,14 +116,6 @@ def scan_hand():
         # Buat direktori jika belum ada
         os.makedirs(UPLOAD_FOLDER, exist_ok=True)
         
-        # Get active meeting for the course
-        meeting = get_active_meeting(int(course_id))
-        if not meeting:
-            return jsonify({
-                "success": False,
-                "message": "Tidak ada pertemuan aktif untuk mata kuliah ini",
-                "error": "NO_ACTIVE_MEETING"
-            }), 400
 
         file.save(file_path)
         logger.info(f"File saved successfully at: {file_path}")
@@ -150,7 +142,7 @@ def scan_hand():
             }), 404
 
         # Record kehadiran
-        attendance, error = hand_scan_service.record_attendance(student_id, meeting.id, scan_type)
+        attendance, error = hand_scan_service.record_attendance(student_id, meeting_id, scan_type)
         if error:
             return jsonify({
                 "success": False,
@@ -173,7 +165,7 @@ def scan_hand():
                 "student_id": student_id,
                 "student_name": student_name,
                 "confidence": float(confidence),
-                "meeting_id": meeting.id,
+                "meeting_id": meeting_id,
                 "attendance_id": attendance.id,
                 "scan_type": scan_type
             }
