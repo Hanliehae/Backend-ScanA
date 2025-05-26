@@ -153,11 +153,11 @@ def predict_hand_owner(image):
         logger.error(f"Traceback: {traceback.format_exc()}")
         return None, 0.0
     
-def record_attendance(user_id, meeting_id):
+def record_attendance(user_id, meeting_id, scan_type='in'):
     logger.info("Creating new database session for attendance recording")
     db = SessionLocal()
     try:
-        logger.info(f"Starting attendance recording process for user_id: {user_id}, meeting_id: {meeting_id}")
+        logger.info(f"Starting attendance recording process for user_id: {user_id}, meeting_id: {meeting_id}, scan_type: {scan_type}")
         
         # 1. Check if user exists
         logger.info(f"Checking if user exists with id: {user_id}")
@@ -192,23 +192,40 @@ def record_attendance(user_id, meeting_id):
             Attendance.meeting_id == meeting_id,
             Attendance.class_student_id == class_student.id
         ).first()
+
+        current_time = datetime.now()
+
         if existing_attendance:
             logger.info(f"Found existing attendance record: {existing_attendance.id}")
-            # Update check_out_time if already checked in
-            if existing_attendance.check_in_time and not existing_attendance.check_out_time:
-                logger.info(f"Updating check-out time for attendance: {existing_attendance.id}")
-                existing_attendance.check_out_time = datetime.now()
+            
+            if scan_type == 'in':
+                if existing_attendance.check_in_time:
+                    logger.warning("Student already checked in")
+                    return None
+                logger.info("Recording check-in time")
+                existing_attendance.check_in_time = current_time
                 existing_attendance.status = "Hadir"
-                logger.info("Committing check-out time update to database")
-                db.commit()
-                logger.info(f"Successfully updated check-out time")
-                return existing_attendance
-            logger.info(f"Attendance already exists and is complete")
+            else:  # scan_type == 'out'
+                if not existing_attendance.check_in_time:
+                    logger.warning("Student has not checked in yet")
+                    return None
+                if existing_attendance.check_out_time:
+                    logger.warning("Student already checked out")
+                    return None
+                logger.info("Recording check-out time")
+                existing_attendance.check_out_time = current_time
+            
+            logger.info("Committing attendance update to database")
+            db.commit()
+            logger.info(f"Successfully updated attendance record: {existing_attendance.id}")
             return existing_attendance
         
-        # 5. Create new attendance record
-        logger.info("Creating new attendance record")
-        current_time = datetime.now()
+        # 5. Create new attendance record for check-in
+        if scan_type == 'out':
+            logger.warning("Cannot check out without checking in first")
+            return None
+            
+        logger.info("Creating new attendance record for check-in")
         attendance = Attendance(
             class_student_id=class_student.id,
             meeting_id=meeting_id,

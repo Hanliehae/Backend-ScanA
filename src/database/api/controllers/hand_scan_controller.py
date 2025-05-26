@@ -73,12 +73,20 @@ def scan_hand():
     
     file = request.files['image']
     course_id = request.form.get('course_id')
+    scan_type = request.form.get('scan_type')  # Default to 'in' if not specified
     
     if not course_id:
         logger.warning("Course ID not provided in request")
         return jsonify({
             "success": False,
             "message": "Course ID is required"
+        }), 400
+    
+    if scan_type not in ['in', 'out']:
+        logger.warning(f"Invalid scan type: {scan_type}")
+        return jsonify({
+            "success": False,
+            "message": "Scan type must be either 'in' or 'out'"
         }), 400
     
     if file.filename == '':
@@ -126,8 +134,8 @@ def scan_hand():
                 }), 404
 
             # Record kehadiran
-            logger.info(f"Recording attendance for student_id: {student_id}")
-            attendance = hand_scan_service.record_attendance(student_id, meeting.id)
+            logger.info(f"Recording attendance for student_id: {student_id} with scan_type: {scan_type}")
+            attendance = hand_scan_service.record_attendance(student_id, meeting.id, scan_type)
             
             if attendance is None:
                 logger.error("Failed to record attendance")
@@ -138,12 +146,13 @@ def scan_hand():
 
             return jsonify({
                 "success": True,
-                "message": "Kehadiran berhasil dicatat",
+                "message": f"Kehadiran {scan_type} berhasil dicatat",
                 "data": {
                     "student_id": student_id,
                     "confidence": confidence,
                     "meeting_id": meeting.id,
-                    "attendance_id": attendance.id
+                    "attendance_id": attendance.id,
+                    "scan_type": scan_type
                 }
             }), 200
 
