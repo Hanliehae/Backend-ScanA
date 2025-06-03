@@ -1,6 +1,6 @@
 from flask import Blueprint, request
 from src.database.api.services import class_service
-from src.utils.jwt_helper import admin_required, login_required
+from src.utils.jwt_helper import admin_required, login_required, student_required
 
 class_bp = Blueprint('class', __name__, url_prefix='/api/classes')
 
@@ -56,6 +56,31 @@ def get_all_classes():
         }, 200
     except Exception as e:
         print(f"Error in get_all_classes endpoint: {str(e)}")
+        return {
+            "status": "error",
+            "message": "Internal server error"
+        }, 500
+    
+
+@class_bp.route('/by-student/<int:student_id>', methods=['GET'])
+@student_required
+def get_classes_by_student(student_id):
+    try:
+        classes = class_service.get_classes_by_student(student_id)
+        class_list = [{
+            "id": c.id,
+            "name": c.name,
+            "course_id": c.course_id
+        } for c in classes]
+
+        return {
+            "status": "success",
+            "data": {
+                "classes": class_list
+            }
+        }, 200
+    except Exception as e:
+        print(f"Error in get_classes_by_student endpoint: {str(e)}")
         return {
             "status": "error",
             "message": "Internal server error"

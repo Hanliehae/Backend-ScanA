@@ -105,3 +105,54 @@ def get_all_meetings():
         raise e
     finally:
         session.close()
+
+
+def get_meetings_by_student(student_id):
+    session = SessionLocal()
+    try:
+        # Base query with joins
+        query = session.query(
+            Meeting,
+            Class,
+            Course
+        ).join(
+            Class, Meeting.class_id == Class.id
+        ).join(
+            Course, Class.course_id == Course.id
+        ).join(
+            ClassStudent, Class.id == ClassStudent.class_id
+        ).filter(
+            ClassStudent.student_id == student_id
+        )
+
+        # Execute query
+        results = query.all()
+
+        # Format response
+        meetings = []
+        for meeting, class_, course in results:
+            meetings.append({
+                'id': meeting.id,
+                'date': meeting.date.strftime('%Y-%m-%d'),
+                'start_time': meeting.start_time,
+                'end_time': meeting.end_time,
+                'course': {
+                    'id': course.id,
+                    'course_id': course.course_id,
+                    'name': course.name,
+                    'semester': course.semester,
+                    'academic_year': course.academic_year
+                },
+                'class': {
+                    'id': class_.id,
+                    'name': class_.name
+                }
+            })
+
+        return meetings
+    except Exception as e:
+        print(f"Error in get_all_meetings: {str(e)}")
+        raise e
+    finally:
+        session.close()
+

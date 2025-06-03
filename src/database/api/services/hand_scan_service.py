@@ -24,29 +24,32 @@ logger = logging.getLogger(__name__)
 
 # Global variable for model
 model = None
+class_names = []
+
 
 def load_hand_model():
-    global model
+    global model, class_names
     try:
         logger.info("Starting model loading process")
-        model_path = os.path.join('src', 'storage', 'models', 'hand_recognition_model.h5')
+        model_path = os.path.join('src', 'storage', 'models', 'model_telapak_v1.h5')
         logger.info(f"Looking for model at: {model_path}")
         
         if os.path.exists(model_path):
             logger.info("Model file found, attempting to load")
             # Load model dengan custom_objects untuk menangani kompatibilitas
-            custom_objects = {
-                'MobileNetV2': tf.keras.applications.MobileNetV2,
-                'relu6': tf.keras.layers.ReLU(6.0),
-            }
             
             # Load model dengan custom_objects dan compile=False
             model = tf.keras.models.load_model(
-                model_path,
-                custom_objects=custom_objects,
-                compile=False
+                model_path
             )
             logger.info("Model loaded successfully")
+
+            # Asumsikan model Anda memiliki informasi kelas dalam atribut
+            if hasattr(model, 'class_names'):
+                class_names = model.class_names
+
+            logger.info(f"Model loaded successfully with classes: {class_names}")
+            logger.info(f"Total classes: {len(class_names)}")
             
             # # Log model summary
             # logger.info("Model Summary:")
@@ -54,11 +57,13 @@ def load_hand_model():
         else:
             logger.error(f"Model file not found at: {model_path}")
             model = None
+            class_names = []
             
     except Exception as e:
         logger.error(f"Error loading model: {str(e)}")
         logger.error(f"Traceback: {traceback.format_exc()}")
         model = None
+        class_names = []
 
 # Load model saat modul diimpor
 load_hand_model()
@@ -68,32 +73,46 @@ def preprocess_image(image):
         logger.info("Starting image preprocessing")
         if isinstance(image, str):
             logger.info(f"Processing image from path: {image}")
-            img = cv2.imread(image)
+            img = cv2.imread(image, cv2.IMREAD_GRAYSCALE)
             if img is None:
                 logger.error(f"Failed to read image file: {image}")
                 raise ValueError(f"Could not read image file: {image}")
         else:
             logger.info("Processing image from numpy array")
-            img = image.copy()
+            # Jika input bukan path, pastikan konversi ke grayscale
+            if len(image.shape) == 3:  # Jika gambar berwarna (RGB/BGR)
+                img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+            else:
+                img = image.copy()
         
         # Log image properties
         logger.info(f"Original image shape: {img.shape}")
         
-        # Konversi BGR ke RGB
-        logger.info("Converting BGR to RGB")
-        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        # Save original image
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        original_path = os.path.join('src', 'storage', 'scans', f'original_{timestamp}.jpg')
+        os.makedirs(os.path.dirname(original_path), exist_ok=True)
+        cv2.imwrite(original_path, img)
+        logger.info(f"Original image saved at: {original_path}")
+        
         
         # Resize ke ukuran yang diharapkan model
         logger.info("Resizing image to 224x224")
         img = cv2.resize(img, (224, 224))
         
+        # Save processed image
+        processed_path = os.path.join('src', 'storage', 'scans', f'processed_{timestamp}.jpg')
+        cv2.imwrite(processed_path, cv2.cvtColor(img, cv2.COLOR_RGB2BGR))
+        logger.info(f"Processed image saved at: {processed_path}")
+        
         # Normalisasi
         logger.info("Normalizing image values")
         img = img / 255.0
         
-        # Tambahkan dimensi batch
-        logger.info("Adding batch dimension")
-        img = np.expand_dims(img, axis=0)
+        # Tambahkan dimensi channel dan batch (model mengharapkan [batch, height, width, channels])
+        logger.info("Adding channel and batch dimensions")
+        img = np.expand_dims(img, axis=-1)  # Tambahkan channel dimension
+        img = np.expand_dims(img, axis=0)   # Tambahkan batch dimension
         
         logger.info(f"Preprocessed image shape: {img.shape}")
         return img
@@ -116,8 +135,10 @@ def predict_hand_owner(image):
         predictions = model.predict(img_array, verbose=0)
         predicted_class = int(np.argmax(predictions[0]))
         confidence = float(predictions[0][predicted_class])
+
+        logger.info(f"Predicted class: {predicted_class}, Confidence: {confidence:.2f}")
         
-        if confidence < 0.3:
+        if confidence < 0.7:
             return None, confidence, f"Tingkat kepercayaan terlalu rendah: {confidence}"
             
         db = SessionLocal()

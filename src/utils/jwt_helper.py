@@ -46,29 +46,36 @@ def login_required(f):
     @wraps(f)
     def decorated(*args, **kwargs):
         token = None
-        if 'Authorization' in request.headers:
-            bearer = request.headers['Authorization']
-            token = bearer.split()[1] if bearer.startswith(
-                'Bearer ') else bearer
+        db = None
+        try:
+            if 'Authorization' in request.headers:
+                bearer = request.headers['Authorization']
+                token = bearer.split()[1] if bearer.startswith(
+                    'Bearer ') else bearer
 
-        if not token:
-            return {"message": "Missing token"}, 401
+            if not token:
+                return {"message": "Missing token"}, 401
 
-        data = decode_access_token(token)
-        if not data:
-            return {"message": "Invalid or expired token"}, 401
+            data = decode_access_token(token)
+            if not data:
+                return {"message": "Invalid or expired token"}, 401
 
-        db = SessionLocal()
-        user = db.query(User).filter(User.id == data["user_id"]).first()
+            db = SessionLocal()
+            user = db.query(User).filter(User.id == data["user_id"]).first()
 
-        if not user:
-            return {"message": "User not found"}, 404
+            if not user:
+                return {"message": "User not found"}, 404
 
-        request.current_user = user
-
-        db.close()
-
-        return f(*args, **kwargs)
+            request.current_user = user
+            return f(*args, **kwargs)
+            
+        except Exception as e:
+            return {"message": f"An error occurred: {str(e)}"}, 500
+            
+        finally:
+            if db:
+                db.close()
+                
     return decorated
 
 # Decorator untuk admin-only access

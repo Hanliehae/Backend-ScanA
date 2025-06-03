@@ -44,6 +44,22 @@ def get_all_classes():
         session.close()
 
 
+def get_classes_by_student(student_id):
+    session = SessionLocal()
+    try:
+        classes = session.query(Class).join(
+            ClassStudent, Class.id == ClassStudent.class_id
+        ).filter(
+            ClassStudent.student_id == student_id
+        ).all()
+        return classes
+    except Exception as e:
+        print(f"Error in get_classes_by_student: {str(e)}")
+        return []
+    finally:
+        session.close()
+
+
 def get_classes_by_course(course_id):
     session = SessionLocal()
     try:

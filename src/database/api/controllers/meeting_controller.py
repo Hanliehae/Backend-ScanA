@@ -1,6 +1,6 @@
 from flask import Blueprint, request
 from src.database.api.services import meeting_service
-from src.utils.jwt_helper import admin_required, login_required
+from src.utils.jwt_helper import admin_required, login_required, student_required
 
 meeting_bp = Blueprint('meeting', __name__, url_prefix='/api/meetings')
 
@@ -61,6 +61,24 @@ def get_meetings_by_class(class_id):
 def get_all_meetings():
     try:
         meetings = meeting_service.get_all_meetings()
+        return {
+            "status": "success",
+            "data": {
+                "meetings": meetings
+            }
+        }, 200
+    except Exception as e:
+        print(f"Error in get_all_meetings endpoint: {str(e)}")
+        return {
+            "status": "error",
+            "message": "Internal server error"
+        }, 500
+    
+@meeting_bp.route('/by-student/<int:student_id>', methods=['GET'])
+@student_required
+def get_meetings(student_id):
+    try:
+        meetings = meeting_service.get_meetings_by_student(student_id)
         return {
             "status": "success",
             "data": {
