@@ -82,3 +82,32 @@ def remove_students():
     return {
         "message": f"Removed {deleted_count} students from class."
     }, 200
+
+@class_student_bp.route('/by-class/all/<int:class_id>', methods=['GET'])
+@login_required
+def get_students_all_by_class(class_id):
+
+    students_data = class_student_service.get_students_all_in_class(class_id)
+    
+    # Get total meetings in this class for percentage calculation
+    session = SessionLocal()
+    total_meetings = session.query(Meeting).filter(
+        Meeting.class_id == class_id
+    ).count()
+    session.close()
+
+    student_list = [{
+        "id": data["user"].id,
+        "nim": data["user"].nim,
+        "name": data["user"].name,
+        "email": data["user"].email,
+        "phone": data["user"].phone,
+        "attendance_count": data["attendance_count"],
+        "total_meetings": total_meetings,
+        "attendance_percentage": round((data["attendance_count"] / total_meetings * 100), 2) if total_meetings > 0 else 0
+    } for data in students_data]
+
+    return {
+        "students": student_list,
+        "total_meetings": total_meetings
+    }, 200

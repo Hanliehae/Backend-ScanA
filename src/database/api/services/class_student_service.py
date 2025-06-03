@@ -100,3 +100,34 @@ def remove_students_from_class(class_id, student_ids):
         session.rollback()
         session.close()
         return None, str(e)
+
+
+def get_students_all_in_class(class_id):
+    session = SessionLocal()
+    try:
+        # Get all students in class with their attendance count and meeting-specific attendance
+        students = session.query(
+            User,
+            func.count(Attendance.id).label('attendance_count'),
+        ).join(
+            ClassStudent, ClassStudent.student_id == User.id
+        ).outerjoin(
+            Attendance, and_(
+                Attendance.class_student_id == ClassStudent.id,
+                Attendance.status == 'Hadir'
+            )
+        ).filter(
+            ClassStudent.class_id == class_id
+        ).group_by(User.id).all()
+
+        # Format the result
+        result = []
+        for student, attendance_count in students:
+            result.append({
+                "user": student,
+                "attendance_count": attendance_count,
+            })
+
+        return result
+    finally:
+        session.close()
