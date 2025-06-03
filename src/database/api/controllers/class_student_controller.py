@@ -31,7 +31,11 @@ def add_students():
 @class_student_bp.route('/by-class/<int:class_id>', methods=['GET'])
 @login_required
 def get_students_by_class(class_id):
-    students_data = class_student_service.get_students_in_class(class_id)
+    meeting_id = request.args.get('meeting_id')
+    if not meeting_id:
+        return {"message": "meeting_id is required"}, 400
+
+    students_data = class_student_service.get_students_in_class(class_id, meeting_id)
     
     # Get total meetings in this class for percentage calculation
     session = SessionLocal()
@@ -46,6 +50,9 @@ def get_students_by_class(class_id):
         "name": data["user"].name,
         "email": data["user"].email,
         "phone": data["user"].phone,
+        "check_in_time": data["check_in_time"],
+        "check_out_time": data["check_out_time"],
+        "status": data["status"],
         "attendance_count": data["attendance_count"],
         "total_meetings": total_meetings,
         "attendance_percentage": round((data["attendance_count"] / total_meetings * 100), 2) if total_meetings > 0 else 0
