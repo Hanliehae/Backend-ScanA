@@ -60,27 +60,40 @@ def get_meetings_by_class(class_id):
         session.close()
 
 
-
 def get_all_meetings():
     session = SessionLocal()
     try:
+        # Subquery untuk menghitung total siswa di kelas
+        total_students_subq = session.query(
+            func.count(ClassStudent.id)
+        ).filter(
+            ClassStudent.class_id == Class.id
+        ).scalar_subquery()
+
         # Base query with joins
         query = session.query(
             Meeting,
             Class,
-            Course
+            Course,
+            func.count(Attendance.id).label('attendance_count'),
+            total_students_subq.label('total_students')
         ).join(
             Class, Meeting.class_id == Class.id
         ).join(
             Course, Class.course_id == Course.id
-        )
+        ).outerjoin(
+            Attendance, and_(
+                Attendance.meeting_id == Meeting.id,
+                Attendance.status == 'Hadir'
+            )
+        ).group_by(Meeting.id, Class.id, Course.id)
 
         # Execute query
         results = query.all()
 
         # Format response
         meetings = []
-        for meeting, class_, course in results:
+        for meeting, class_, course, attendance_count, total_students in results:
             meetings.append({
                 'id': meeting.id,
                 'date': meeting.date.strftime('%Y-%m-%d'),
@@ -96,7 +109,9 @@ def get_all_meetings():
                 'class': {
                     'id': class_.id,
                     'name': class_.name
-                }
+                },
+                'attendance_count': attendance_count,
+                'total_students': total_students
             })
 
         return meetings
