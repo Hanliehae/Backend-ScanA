@@ -12,3 +12,5 @@ node_modules
 hand_scan_controller.log
 hand_scan.log
 attendance.log
+
+storage/hands/*
