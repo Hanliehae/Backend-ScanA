@@ -8899,3 +8899,73 @@ Arguments received by Functional.call():
 2025-06-03 13:04:33,888 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:04:33] "GET /api/meetings/by-class/20 HTTP/1.1" 200 -
 2025-06-03 13:04:38,715 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:04:38] "GET /api/meetings/by-class/20 HTTP/1.1" 200 -
 2025-06-03 13:04:39,996 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:04:39] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-03 13:05:47,252 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:05:47] "GET /api/meetings/by-class/19 HTTP/1.1" 200 -
+2025-06-03 13:05:47,285 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:05:47] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-03 13:05:48,444 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:05:48] "GET /api/class-students/by-class/all/19 HTTP/1.1" 200 -
+2025-06-03 13:05:48,962 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:05:48] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-03 13:05:51,201 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:05:51] "GET /api/meetings/by-class/19 HTTP/1.1" 200 -
+2025-06-03 13:05:53,473 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:05:53] "GET /api/class-students/by-class/19?meeting_id=29 HTTP/1.1" 200 -
+2025-06-03 13:05:59,699 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:05:59] "GET /api/meetings/by-class/19 HTTP/1.1" 200 -
+2025-06-03 13:06:01,994 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:06:01] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-03 13:06:07,486 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:06:07] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-03 13:06:07,490 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:06:07] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-03 13:06:07,496 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:06:07] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-03 13:06:07,511 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:06:07] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-03 13:06:07,532 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:06:07] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-03 13:09:44,135 - werkzeug - INFO -  * Detected change in '/Volumes/External/Teknik_Informatika/KULIAH/Guests/ScanA/Backend-ScanA/src/database/api/controllers/meeting_controller.py', reloading
+2025-06-03 13:09:47,747 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 13:15:21,299 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-03 13:15:21,308 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src/storage/models/model_telapak_v1.h5
+2025-06-03 13:15:21,308 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-03 13:15:23,251 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-03 13:15:23,286 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-03 13:15:23,288 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-03 13:15:23,288 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-03 13:15:23,532 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.16:8000
+2025-06-03 13:15:23,533 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-03 13:15:23,538 - werkzeug - INFO -  * Restarting with stat
+2025-06-03 13:15:43,220 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-03 13:15:43,221 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src/storage/models/model_telapak_v1.h5
+2025-06-03 13:15:43,222 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-03 13:15:44,507 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-03 13:15:44,538 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-03 13:15:44,538 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-03 13:15:44,538 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-03 13:15:44,710 - werkzeug - WARNING -  * Debugger is active!
+2025-06-03 13:15:44,750 - werkzeug - INFO -  * Debugger PIN: 423-140-864
+2025-06-03 13:15:57,439 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:15:57] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-03 13:15:57,440 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:15:57] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-03 13:15:57,441 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:15:57] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-03 13:15:57,454 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:15:57] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-03 13:15:57,459 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:15:57] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-03 13:16:28,318 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:16:28] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-03 13:16:28,323 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:16:28] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-03 13:16:28,329 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:16:28] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-03 13:16:28,358 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:16:28] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-03 13:16:28,362 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:16:28] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-03 13:16:39,915 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:16:39] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-03 13:16:52,599 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:16:52] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-03 13:16:58,409 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:16:58] "GET /api/meetings/by-class/19 HTTP/1.1" 200 -
+2025-06-03 13:16:58,450 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:16:58] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-03 13:17:08,011 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:17:08] "GET /api/class-students/by-class/all/19 HTTP/1.1" 200 -
+2025-06-03 13:17:08,559 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:17:08] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-03 13:17:11,911 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:17:11] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-03 13:29:52,132 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:29:52] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-03 13:29:52,142 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:29:52] "GET /api/meetings/by-class/19 HTTP/1.1" 200 -
+2025-06-03 13:29:53,275 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:29:53] "GET /api/class-students/by-class/19?meeting_id=29 HTTP/1.1" 200 -
+2025-06-03 13:29:55,735 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:29:55] "GET /api/meetings/by-class/19 HTTP/1.1" 200 -
+2025-06-03 13:29:57,345 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:29:57] "GET /api/class-students/by-class/all/19 HTTP/1.1" 200 -
+2025-06-03 13:29:58,170 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:29:58] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-03 13:29:59,181 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:29:59] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-03 13:30:02,981 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:30:02] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-03 13:30:07,557 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:30:07] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-03 13:30:21,868 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:30:21] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-03 13:30:22,408 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:30:22] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-03 13:30:22,629 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:30:22] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-03 13:30:22,766 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:30:22] "GET /api/courses/by-student/26 HTTP/1.1" 200 -
+2025-06-03 13:30:22,809 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:30:22] "GET /api/history/?student_id=26 HTTP/1.1" 200 -
+2025-06-03 13:30:22,810 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:30:22] "GET /api/classes/by-student/26 HTTP/1.1" 200 -
+2025-06-03 13:30:22,812 - werkzeug - INFO - 192.168.1.14 - - [03/Jun/2025 13:30:22] "GET /api/meetings/by-student/26 HTTP/1.1" 200 -
