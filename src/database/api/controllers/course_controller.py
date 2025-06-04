@@ -94,3 +94,17 @@ def get_course_detail(course_id):
             "name": course.name
         }
     }, 200
+
+@course_bp.route('/<int:course_id>', methods=['DELETE'])
+@admin_required
+def delete_course(course_id):
+    try:
+        success, error = course_service.delete_course(course_id)
+        if error:
+            return {"message": error}, 400
+
+        return {"message": "Course deleted successfully"}, 200
+    except Exception as e:
+        print(f"Error in delete_course endpoint: {str(e)}")
+        return {"message": "Internal server error"}, 500
+ 

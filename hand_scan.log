@@ -9699,3 +9699,1083 @@ Arguments received by Functional.call():
 2025-06-04 10:49:30,944 - werkzeug - WARNING -  * Debugger is active!
 2025-06-04 10:49:30,957 - werkzeug - INFO -  * Debugger PIN: 589-864-851
 2025-06-04 10:49:50,848 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\course_service.py', reloading
+2025-06-04 10:49:51,617 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:50:00,029 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:50:00,030 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:50:00,031 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:50:00,356 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:50:00,365 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:50:00,367 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:50:00,367 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:50:00,443 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:50:00,454 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:53:15,922 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:53:15] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:53:17,393 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:53:17] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:53:17,398 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:53:17] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:53:18,544 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:53:18] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:53:19,205 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:53:19] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:53:22,185 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:53:22] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:53:23,989 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:53:23] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:53:24,884 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:53:24] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:54:26,243 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\user_service.py', reloading
+2025-06-04 10:54:27,368 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:54:40,227 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:54:40,228 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:54:40,230 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:54:40,789 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:54:40,805 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:54:40,805 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:54:40,806 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:54:40,946 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:54:40,959 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:54:41,939 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:54:41] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:54:55,135 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:54:55] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:55:22,004 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\user_service.py', reloading
+2025-06-04 10:55:22,839 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:55:32,559 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:55:32,559 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:55:32,560 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:55:32,984 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:55:32,994 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:55:32,995 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:55:32,996 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:55:33,081 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:55:33,093 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:55:35,618 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:55:35] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:55:37,331 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:55:37] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:55:37,345 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:55:37] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:55:38,973 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:55:38] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:55:39,801 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:55:39] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:55:50,096 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:55:50] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 10:55:50,637 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:55:50] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:55:51,693 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:55:51] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:56:02,326 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:02] "[31m[1mPOST /api/class-students/remove HTTP/1.1[0m" 400 -
+2025-06-04 10:56:04,667 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:04] "[31m[1mPOST /api/class-students/remove HTTP/1.1[0m" 400 -
+2025-06-04 10:56:10,614 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:10] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 10:56:11,224 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:11] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:56:12,343 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:12] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:56:22,700 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:22] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 10:56:23,249 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:23] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:56:23,825 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:23] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:56:34,390 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:34] "[31m[1mPOST /api/class-students/remove HTTP/1.1[0m" 400 -
+2025-06-04 10:56:43,111 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:43] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:56:44,267 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:44] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:56:47,475 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:47] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:56:47,574 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:47] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 10:56:47,724 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:47] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 10:56:47,773 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:47] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 10:56:47,775 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:47] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 10:56:51,023 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:51] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 10:56:51,031 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:51] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:56:51,097 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:51] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 10:56:51,928 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:51] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 10:56:51,934 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:51] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 10:56:52,135 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:52] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:56:53,571 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:53] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:56:53,572 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:53] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:56:54,321 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:54] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:56:55,228 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:56:55] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:57:02,182 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:02] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 10:57:02,590 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:02] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:57:03,150 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:03] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:57:10,040 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:10] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 10:57:10,269 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:10] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:57:11,124 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:11] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:57:16,611 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:16] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 10:57:16,899 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:16] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:57:17,825 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:17] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:57:26,281 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:26] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 10:57:27,738 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:27] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:57:28,346 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:57:28] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:59:37,090 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:37] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:59:40,565 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:40] "GET /api/class-students/by-class/14?meeting_id=34 HTTP/1.1" 200 -
+2025-06-04 10:59:41,820 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:41] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:59:45,706 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:45] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:59:47,204 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:47] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:59:47,216 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:47] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:59:50,122 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:50] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:59:51,180 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:51] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:59:56,801 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:56] "POST /api/class-students/add HTTP/1.1" 200 -
+2025-06-04 10:59:57,648 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:57] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:59:59,188 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:59:59] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:00:37,737 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:00:37] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 11:00:38,012 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:00:38] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:00:38,827 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:00:38] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:01:13,805 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:13] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 11:01:13,977 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:13] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:01:14,614 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:14] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:01:20,561 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:20] "[31m[1mPOST /api/class-students/remove HTTP/1.1[0m" 400 -
+2025-06-04 11:01:28,242 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:28] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 11:01:28,487 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:28] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:01:28,981 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:28] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:01:34,075 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:34] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 11:01:34,264 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:34] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:01:34,887 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:34] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:01:39,727 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:39] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 11:01:40,004 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:40] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:01:40,637 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:40] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:01:44,992 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:44] "POST /api/class-students/remove HTTP/1.1" 200 -
+2025-06-04 11:01:45,170 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:45] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:01:45,880 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:45] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:01:54,793 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:01:54] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:02:01,002 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:01] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:02:29,369 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:29] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:02:29,543 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:29] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:02:29,796 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:29] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:02:30,024 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:30] "GET /api/courses/by-student/26 HTTP/1.1" 200 -
+2025-06-04 11:02:30,036 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:30] "GET /api/classes/by-student/26 HTTP/1.1" 200 -
+2025-06-04 11:02:30,045 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:30] "GET /api/meetings/by-student/26 HTTP/1.1" 200 -
+2025-06-04 11:02:30,049 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:30] "GET /api/history/?student_id=26 HTTP/1.1" 200 -
+2025-06-04 11:02:38,081 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:38] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:02:38,217 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:38] "GET /api/courses/detail/by-student/26?semester=ganjil&academic_year=2025 HTTP/1.1" 200 -
+2025-06-04 11:02:38,505 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:38] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:02:38,618 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:38] "GET /api/courses/detail/by-student/26?semester=genap&academic_year=2025 HTTP/1.1" 200 -
+2025-06-04 11:02:39,324 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:39] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:02:39,513 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:39] "GET /api/courses/detail/by-student/26?semester=ganjil&academic_year=2025 HTTP/1.1" 200 -
+2025-06-04 11:02:47,632 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:47] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:02:48,209 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:02:48] "GET /api/history/?student_id=26 HTTP/1.1" 200 -
+2025-06-04 11:03:04,295 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:04] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:03:05,500 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:05] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:03:05,829 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:05] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:03:05,833 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:05] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:03:05,839 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:05] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:03:05,849 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:05] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:03:05,855 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:05] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:03:13,461 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:13] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:03:16,340 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:16] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:03:31,350 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:31] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:03:31,814 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:31] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:03:32,514 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:32] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:03:32,517 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:32] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:03:32,652 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:32] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:03:32,669 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:32] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:03:32,700 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:32] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:03:35,773 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:35] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:03:39,035 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:39] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:03:42,606 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:42] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:03:43,774 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:43] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:03:45,423 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:45] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:03:45,939 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:45] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:03:51,078 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:03:51] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:03:59,141 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:59] "[35m[1mPOST /api/meetings/create HTTP/1.1[0m" 201 -
+2025-06-04 11:03:59,713 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:03:59] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:04:03,024 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:03] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:04:05,881 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:05] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:04:05,883 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:05] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:04:05,886 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:05] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:04:05,887 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:05] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:04:05,891 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:05] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:04:08,673 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:08] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:04:08,677 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:08] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:04:08,687 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:08] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:04:08,691 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:08] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:04:08,708 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:08] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:04:13,172 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:13] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:04:13,177 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:13] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:04:13,200 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:13] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:04:13,201 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:13] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:04:13,207 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:13] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:04:20,630 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:20] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:04:21,789 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:21] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:04:23,091 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:23] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:04:26,705 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:26] "GET /api/user/5 HTTP/1.1" 200 -
+2025-06-04 11:04:28,025 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:28] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:04:31,219 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:31] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:04:33,119 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:33] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:04:33,126 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:33] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:04:34,325 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:34] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:04:35,549 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:35] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:04:35,956 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:35] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:04:38,764 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:38] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:04:39,700 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:39] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:04:40,933 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:40] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:04:40,991 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:40] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:04:42,072 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:42] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:04:47,126 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:47] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:04:48,447 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:04:48] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:05:25,026 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\history_controller.py', reloading
+2025-06-04 11:05:25,954 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 11:05:36,255 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:05:36,256 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:05:36,256 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:05:36,673 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:05:36,684 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:05:36,685 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:05:36,686 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:05:36,779 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 11:05:36,792 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 11:06:03,679 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\admin_history_controller.py', reloading
+2025-06-04 11:06:04,497 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 11:06:13,008 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:06:13,009 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:06:13,010 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:06:13,416 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:06:13,426 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:06:13,427 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:06:13,427 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:06:13,506 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 11:06:13,516 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 11:06:18,033 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:18] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:06:18,609 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:06:18] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:06:18,716 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:18] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:06:19,157 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:19] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:06:19,353 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:19] "GET /api/courses/by-student/16 HTTP/1.1" 200 -
+2025-06-04 11:06:19,512 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:19] "GET /api/meetings/by-student/16 HTTP/1.1" 200 -
+2025-06-04 11:06:19,520 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:19] "GET /api/classes/by-student/16 HTTP/1.1" 200 -
+2025-06-04 11:06:19,550 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:19] "GET /api/history/?student_id=16 HTTP/1.1" 200 -
+2025-06-04 11:06:38,692 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:38] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:06:39,155 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:39] "GET /api/courses/detail/by-student/16?semester=ganjil&academic_year=2025 HTTP/1.1" 200 -
+2025-06-04 11:06:40,299 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:40] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:06:40,715 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:40] "GET /api/history/?student_id=16 HTTP/1.1" 200 -
+2025-06-04 11:06:49,531 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:49] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:06:49,707 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:49] "GET /api/courses/detail/by-student/16?semester=genap&academic_year=2025 HTTP/1.1" 200 -
+2025-06-04 11:06:50,356 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:50] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:06:50,526 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:06:50] "GET /api/courses/detail/by-student/16?semester=ganjil&academic_year=2025 HTTP/1.1" 200 -
+2025-06-04 11:07:09,176 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:07:09] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:07:09,547 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:07:09] "GET /api/history/?student_id=16 HTTP/1.1" 200 -
+2025-06-04 11:07:16,450 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:07:16] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:07:17,172 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:07:17] "GET /api/history/?student_id=16 HTTP/1.1" 200 -
+2025-06-04 11:07:17,180 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:07:17] "GET /api/courses/by-student/16 HTTP/1.1" 200 -
+2025-06-04 11:07:17,187 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:07:17] "GET /api/meetings/by-student/16 HTTP/1.1" 200 -
+2025-06-04 11:07:17,191 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:07:17] "GET /api/classes/by-student/16 HTTP/1.1" 200 -
+2025-06-04 11:07:39,079 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:07:39] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:07:57,690 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:07:57] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:07:58,758 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:07:58] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:07:58,759 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:07:58] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:07:59,265 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:07:59] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:07:59,992 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:07:59] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:08:16,039 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:08:16] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:08:17,119 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:08:17] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:08:19,969 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:08:19] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:09:08,443 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:08] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:09:14,206 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:14] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:09:15,943 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:15] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:09:17,326 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:17] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:09:45,365 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:45] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:09:45,571 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:45] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:09:45,897 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:45] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:09:45,899 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:45] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:09:45,903 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:45] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:09:45,920 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:45] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:09:46,037 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:46] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:09:55,088 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:09:55] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:10:03,211 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:03] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:10:09,646 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:09] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:10:09,871 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:09] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:10:19,078 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:19] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:10:20,712 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:20] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:10:21,883 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:21] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:10:21,894 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:21] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:10:22,449 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:22] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:10:23,051 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:23] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:10:33,083 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:33] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:10:34,089 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:34] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:10:34,976 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:34] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:10:35,220 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:10:35] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:10:48,735 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\history_controller.py', reloading
+2025-06-04 11:10:49,589 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 11:10:59,279 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:10:59,280 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:10:59,281 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:10:59,741 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:10:59,753 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:10:59,792 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:10:59,793 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:10:59,877 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 11:10:59,890 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 11:11:25,186 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:11:25] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:11:25,665 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:11:25] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:11:30,448 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:11:30] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:11:44,364 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:11:44] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:11:44,857 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:11:44] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:12:12,937 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:12] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:12:13,132 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:13] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:12:13,912 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:13] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:12:13,951 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:13] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:12:13,994 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:13] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:12:14,032 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:14] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:12:14,064 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:14] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:12:16,689 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:16] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:12:16,691 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:16] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:12:16,700 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:16] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:12:16,703 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:16] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:12:16,712 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:16] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:12:22,113 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:22] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:12:23,526 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:23] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:12:24,145 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:24] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:12:26,326 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:26] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:12:27,824 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:27] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:12:27,935 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:27] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:12:45,906 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:45] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:12:47,835 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:47] "[35m[1mPOST /api/meetings/create HTTP/1.1[0m" 201 -
+2025-06-04 11:12:48,260 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:12:48] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:12:58,336 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:12:58] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:13:02,692 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:02] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:13:02,700 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:02] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:13:02,702 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:02] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:13:02,712 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:02] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:13:02,713 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:02] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:13:04,912 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:13:04] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:13:08,405 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:13:08] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:13:08,426 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:13:08] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:13:08,449 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:13:08] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:13:08,451 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:13:08] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:13:08,464 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:13:08] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:13:10,678 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:10] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:13:12,271 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:12] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:13:12,272 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:12] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:13:15,974 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:15] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:13:18,536 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:18] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:13:19,478 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:19] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:13:19,655 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:19] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:13:23,188 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:23] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:13:24,132 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:24] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:13:25,205 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:13:25] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:15:44,967 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:15:44] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:16:34,915 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:16:34] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:16:36,966 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:16:36] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:17:50,741 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:17:50] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:17:53,299 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:17:53] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:17:54,135 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:17:54] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:17:54,457 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:17:54] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:18:28,492 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:28] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:18:28,819 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:28] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:18:29,727 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:29] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:18:29,743 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:29] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:18:29,744 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:29] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:18:29,746 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:29] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:18:29,763 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:29] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:18:33,446 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:33] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:18:34,680 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:34] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:18:37,235 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:37] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:18:38,966 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:38] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:18:41,498 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:41] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:18:43,144 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:43] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:18:43,243 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:43] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:18:45,222 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:45] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:18:46,459 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:46] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:18:46,530 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:46] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:18:48,456 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:18:48] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:18:58,609 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:18:59,493 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:18:59,497 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:18:59,498 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:18:59,499 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:18:59,549 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:18:59,567 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_111859.jpg
+2025-06-04 11:18:59,568 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:18:59,580 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_111859.jpg
+2025-06-04 11:18:59,581 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:18:59,584 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:18:59,585 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:19:00,430 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:19:00,454 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:00] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:19:06,073 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:06] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:19:23,308 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:23] "[32mPOST /api/courses HTTP/1.1[0m" 308 -
+2025-06-04 11:19:23,422 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:23] "[35m[1mPOST /api/courses/ HTTP/1.1[0m" 201 -
+2025-06-04 11:19:31,363 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:31] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:19:34,190 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:34] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:19:34,206 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:34] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:19:34,207 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:34] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:19:34,212 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:34] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:19:34,217 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:34] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:19:37,638 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:19:37] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:19:43,922 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:43] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:19:43,926 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:43] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:19:43,935 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:43] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:19:43,940 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:43] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:19:43,944 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:19:43] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:20:07,003 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:20:07] "[32mPOST /api/courses HTTP/1.1[0m" 308 -
+2025-06-04 11:20:07,364 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:20:07] "[35m[1mPOST /api/courses/ HTTP/1.1[0m" 500 -
+2025-06-04 11:20:12,524 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:20:12] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:20:17,737 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:20:17] "[32mPOST /api/courses HTTP/1.1[0m" 308 -
+2025-06-04 11:20:17,777 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:20:17] "[35m[1mPOST /api/courses/ HTTP/1.1[0m" 500 -
+2025-06-04 11:20:44,313 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\course_controller.py', reloading
+2025-06-04 11:20:45,142 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 11:20:54,329 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:20:54,329 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:20:54,330 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:20:54,656 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:20:54,667 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:20:54,667 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:20:54,668 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:20:54,739 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 11:20:54,750 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 11:20:57,367 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\course_service.py', reloading
+2025-06-04 11:20:58,322 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 11:21:07,496 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:21:07,497 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:21:07,498 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:21:07,844 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:21:07,855 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:21:07,856 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:21:07,856 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:21:07,930 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 11:21:07,943 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 11:21:12,787 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:21:12] "[32mPOST /api/courses HTTP/1.1[0m" 308 -
+2025-06-04 11:21:13,917 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:21:13] "[31m[1mPOST /api/courses/ HTTP/1.1[0m" 400 -
+2025-06-04 11:21:43,571 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:21:43] "[32mPOST /api/courses HTTP/1.1[0m" 308 -
+2025-06-04 11:21:43,637 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:21:43] "[31m[1mPOST /api/courses/ HTTP/1.1[0m" 400 -
+2025-06-04 11:21:48,888 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\course_service.py', reloading
+2025-06-04 11:21:49,862 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 11:21:58,164 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:21:58,165 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:21:58,166 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:21:58,489 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:21:58,499 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:21:58,500 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:21:58,501 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:21:58,569 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 11:21:58,582 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 11:22:01,259 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:22:01] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:22:01,272 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:22:01] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:22:01,301 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:22:01] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:22:01,318 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:22:01] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:22:01,347 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:22:01] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:23:00,756 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:00] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:23:00,840 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:00] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:23:01,242 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:01] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:23:01,264 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:01] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:23:01,271 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:01] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:23:01,292 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:01] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:23:01,296 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:01] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:23:03,153 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:03] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:23:05,086 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\course_service.py', reloading
+2025-06-04 11:23:05,949 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 11:23:14,791 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:23:14,792 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:23:14,793 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:23:15,139 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:23:15,151 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:23:15,152 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:23:15,153 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:23:15,232 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 11:23:15,246 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 11:23:30,447 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\course_service.py', reloading
+2025-06-04 11:23:31,518 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 11:23:39,522 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:23:39,522 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:23:39,523 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:23:39,840 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:23:39,850 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:23:39,850 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:23:39,851 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:23:39,919 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 11:23:39,930 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 11:23:40,733 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:40] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:23:54,148 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:54] "[32mPOST /api/courses HTTP/1.1[0m" 308 -
+2025-06-04 11:23:54,356 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:54] "[35m[1mPOST /api/courses/ HTTP/1.1[0m" 201 -
+2025-06-04 11:23:57,254 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:57] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:23:57,291 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:57] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:23:57,310 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:57] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:23:57,312 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:57] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:23:57,346 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:23:57] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:24:36,973 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:24:36] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:24:37,625 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:24:37] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:24:38,031 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:24:38] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:24:38,044 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:24:38] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:24:38,046 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:24:38] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:24:38,072 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:24:38] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:24:38,179 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:24:38] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:24:41,488 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:24:41] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:24:58,891 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:24:58] "GET /api/classes/by-course/12 HTTP/1.1" 200 -
+2025-06-04 11:25:00,854 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:00] "[35m[1mPOST /api/classes/create HTTP/1.1[0m" 201 -
+2025-06-04 11:25:01,149 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:01] "GET /api/classes/by-course/12 HTTP/1.1" 200 -
+2025-06-04 11:25:04,605 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:04] "GET /api/classes/by-course/12 HTTP/1.1" 200 -
+2025-06-04 11:25:06,434 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:06] "GET /api/meetings/by-class/21 HTTP/1.1" 200 -
+2025-06-04 11:25:06,588 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:06] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:25:09,981 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:09] "DELETE /api/classes/21 HTTP/1.1" 200 -
+2025-06-04 11:25:10,363 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:10] "GET /api/classes/by-course/12 HTTP/1.1" 200 -
+2025-06-04 11:25:13,346 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:13] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:25:34,220 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:34] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:25:43,127 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:43] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:25:45,953 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:45] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:25:45,961 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:45] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:25:55,070 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:25:55] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:26:02,849 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:02] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:26:03,996 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:03] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:26:03,999 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:03] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:26:05,001 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:05] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:26:05,538 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:05] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:26:06,554 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:06] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:26:08,770 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:08] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:26:09,304 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:09] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:26:15,113 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:15] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:26:16,201 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:16] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 11:26:16,682 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:16] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:26:17,510 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:17] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:26:55,333 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:55] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:26:57,615 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:26:57] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:27:02,664 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:02] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:27:02,673 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:02] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:27:02,674 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:02] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:27:02,677 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:02] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:27:02,686 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:02] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:27:07,140 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:07] "GET /api/classes/by-course/12 HTTP/1.1" 200 -
+2025-06-04 11:27:12,265 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:12] "GET /api/classes/by-course/12 HTTP/1.1" 200 -
+2025-06-04 11:27:15,150 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:15] "GET /api/classes/by-course/7 HTTP/1.1" 200 -
+2025-06-04 11:27:18,447 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:18] "GET /api/classes/by-course/12 HTTP/1.1" 200 -
+2025-06-04 11:27:24,557 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:24] "[31m[1mDELETE /api/courses/12 HTTP/1.1[0m" 405 -
+2025-06-04 11:27:27,974 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:27] "[31m[1mDELETE /api/courses/12 HTTP/1.1[0m" 405 -
+2025-06-04 11:27:33,263 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:33] "GET /api/classes/by-course/12 HTTP/1.1" 200 -
+2025-06-04 11:27:35,364 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:35] "[35m[1mPOST /api/classes/create HTTP/1.1[0m" 201 -
+2025-06-04 11:27:35,724 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:35] "GET /api/classes/by-course/12 HTTP/1.1" 200 -
+2025-06-04 11:27:38,676 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:27:38] "[31m[1mDELETE /api/courses/12 HTTP/1.1[0m" 405 -
+2025-06-04 11:27:51,153 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\course_service.py', reloading
+2025-06-04 11:27:51,941 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 11:28:01,301 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:28:01,301 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:28:01,302 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:28:01,646 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:28:01,656 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:28:01,657 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:28:01,658 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:28:01,734 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 11:28:01,745 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 11:28:16,855 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:28:16,856 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:28:16,857 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:28:17,169 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:28:17,179 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:28:17,180 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:28:17,181 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:28:17,296 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.15:8000
+2025-06-04 11:28:17,296 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-04 11:28:17,300 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 11:28:25,269 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 11:28:25,270 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 11:28:25,271 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 11:28:25,623 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 11:28:25,633 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 11:28:25,633 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 11:28:25,634 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 11:28:25,710 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 11:28:25,721 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 11:31:07,847 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:07] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:31:07,945 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:07] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:31:08,855 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:08] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:31:08,880 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:08] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:31:08,934 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:08] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:31:08,965 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:08] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:31:08,987 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:08] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:31:13,018 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:13] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:31:14,754 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:14] "GET /api/classes/by-course/7 HTTP/1.1" 200 -
+2025-06-04 11:31:16,300 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:16] "[35m[1mPOST /api/classes/create HTTP/1.1[0m" 201 -
+2025-06-04 11:31:16,510 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:16] "GET /api/classes/by-course/7 HTTP/1.1" 200 -
+2025-06-04 11:31:18,230 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:18] "GET /api/meetings/by-class/23 HTTP/1.1" 200 -
+2025-06-04 11:31:18,476 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:18] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:31:38,850 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:38] "[35m[1mPOST /api/meetings/create HTTP/1.1[0m" 201 -
+2025-06-04 11:31:39,052 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:39] "GET /api/meetings/by-class/23 HTTP/1.1" 200 -
+2025-06-04 11:31:40,858 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:40] "GET /api/class-students/by-class/all/23 HTTP/1.1" 200 -
+2025-06-04 11:31:41,030 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:41] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:31:59,538 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:59] "POST /api/class-students/add HTTP/1.1" 200 -
+2025-06-04 11:31:59,883 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:31:59] "GET /api/class-students/by-class/all/23 HTTP/1.1" 200 -
+2025-06-04 11:32:01,096 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:32:01] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:32:03,745 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:32:03] "GET /api/meetings/by-class/23 HTTP/1.1" 200 -
+2025-06-04 11:32:04,982 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:32:04] "GET /api/classes/by-course/7 HTTP/1.1" 200 -
+2025-06-04 11:32:08,024 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:32:08] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:32:08,032 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:32:08] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:32:08,036 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:32:08] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:32:08,060 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:32:08] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:32:08,061 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:32:08] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:33:53,075 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:33:53] "[31m[1mDELETE /api/courses/7 HTTP/1.1[0m" 405 -
+2025-06-04 11:34:02,558 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:02] "GET /api/classes/by-course/7 HTTP/1.1" 200 -
+2025-06-04 11:34:06,905 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:06] "[31m[1mDELETE /api/courses/7 HTTP/1.1[0m" 405 -
+2025-06-04 11:34:11,099 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:11] "[31m[1mDELETE /api/courses/7 HTTP/1.1[0m" 405 -
+2025-06-04 11:34:11,578 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:11] "[31m[1mDELETE /api/courses/7 HTTP/1.1[0m" 405 -
+2025-06-04 11:34:26,183 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:26] "[31m[1mDELETE /api/courses/7 HTTP/1.1[0m" 405 -
+2025-06-04 11:34:31,547 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:31] "[31m[1mDELETE /api/courses/7 HTTP/1.1[0m" 405 -
+2025-06-04 11:34:37,394 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:37] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:34:37,396 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:37] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:34:37,399 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:37] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:34:37,402 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:37] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:34:37,414 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:37] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:34:47,023 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:34:47,701 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:34:47,705 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:34:47,706 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:34:47,706 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:34:47,733 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:34:47,743 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_113447.jpg
+2025-06-04 11:34:47,744 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:34:47,747 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_113447.jpg
+2025-06-04 11:34:47,748 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:34:47,749 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:34:47,749 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:34:48,080 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:34:48,107 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:34:48] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:35:43,280 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:35:43] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:35:45,013 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:35:45] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:35:45,014 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:35:45] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:36:02,466 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:36:02] "[35m[1mPOST /api/meetings/create HTTP/1.1[0m" 201 -
+2025-06-04 11:36:02,858 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:36:02] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:36:05,195 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:36:05] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:36:09,629 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:36:09] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:36:09,632 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:36:09] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:36:09,634 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:36:09] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:36:09,636 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:36:09] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:36:09,641 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:36:09] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:37:14,065 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:37:14,683 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:37:14,687 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:37:14,688 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:37:14,688 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:37:14,712 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:37:14,722 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_113714.jpg
+2025-06-04 11:37:14,723 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:37:14,726 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_113714.jpg
+2025-06-04 11:37:14,727 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:37:14,727 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:37:14,728 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:37:14,880 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:37:14,910 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:37:14] "POST /api/scan-hand HTTP/1.1" 200 -
+2025-06-04 11:37:25,416 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:37:25,978 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:37:25,982 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:37:25,983 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:37:25,984 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:37:26,006 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:37:26,017 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_113726.jpg
+2025-06-04 11:37:26,018 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:37:26,021 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_113726.jpg
+2025-06-04 11:37:26,022 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:37:26,022 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:37:26,023 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:37:26,162 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:37:26,179 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:37:26] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:37:39,586 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:37:39,918 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:37:39,922 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:37:39,922 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:37:39,923 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:37:39,944 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:37:39,955 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_113739.jpg
+2025-06-04 11:37:39,955 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:37:39,958 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_113739.jpg
+2025-06-04 11:37:39,958 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:37:39,959 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:37:39,961 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:37:40,119 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:37:40,133 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:37:40] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:37:53,121 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:37:53,622 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:37:53,626 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:37:53,627 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:37:53,627 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:37:53,650 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:37:53,660 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_113753.jpg
+2025-06-04 11:37:53,661 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:37:53,665 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_113753.jpg
+2025-06-04 11:37:53,665 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:37:53,666 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:37:53,667 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:37:53,818 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:37:53,832 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:37:53] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:38:06,778 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:06] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:38:06,866 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:06] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:38:07,442 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:07] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:38:07,454 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:07] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:38:07,455 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:07] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:38:07,460 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:07] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:38:07,473 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:07] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:38:11,176 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:11] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:38:12,924 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:12] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:38:15,386 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:15] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:38:16,766 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:16] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 11:38:16,770 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:16] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:38:17,582 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:38:17] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 11:38:33,954 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:38:34,666 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:38:34,671 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:38:34,671 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:38:34,672 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:38:34,694 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:38:34,704 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_113834.jpg
+2025-06-04 11:38:34,705 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:38:34,708 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_113834.jpg
+2025-06-04 11:38:34,709 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:38:34,709 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:38:34,710 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:38:34,884 - src.database.api.services.hand_scan_service - INFO - Predicted class: 0, Confidence: 1.00
+2025-06-04 11:38:34,908 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:38:34] "POST /api/scan-hand HTTP/1.1" 200 -
+2025-06-04 11:38:55,924 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:38:56,844 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:38:56,848 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:38:56,849 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:38:56,849 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:38:56,875 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:38:56,885 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_113856.jpg
+2025-06-04 11:38:56,885 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:38:56,888 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_113856.jpg
+2025-06-04 11:38:56,889 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:38:56,890 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:38:56,891 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:38:57,036 - src.database.api.services.hand_scan_service - INFO - Predicted class: 0, Confidence: 1.00
+2025-06-04 11:38:57,050 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:38:57] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:39:08,648 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:39:09,474 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:39:09,479 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:39:09,480 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:39:09,480 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:39:09,505 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:39:09,517 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_113909.jpg
+2025-06-04 11:39:09,518 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:39:09,521 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_113909.jpg
+2025-06-04 11:39:09,522 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:39:09,523 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:39:09,523 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:39:09,678 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:39:09,698 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:39:09] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:39:17,424 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:39:18,375 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:39:18,379 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:39:18,380 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:39:18,381 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:39:18,403 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:39:18,413 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_113918.jpg
+2025-06-04 11:39:18,414 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:39:18,418 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_113918.jpg
+2025-06-04 11:39:18,418 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:39:18,419 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:39:18,420 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:39:18,601 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:39:18,620 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:39:18] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:39:38,919 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:39:39,552 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:39:39,555 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:39:39,556 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:39:39,557 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:39:39,579 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:39:39,592 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_113939.jpg
+2025-06-04 11:39:39,593 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:39:39,599 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_113939.jpg
+2025-06-04 11:39:39,600 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:39:39,601 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:39:39,602 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:39:39,786 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:39:39,799 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:39:39] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:40:10,346 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:10] "[32mPOST /api/courses HTTP/1.1[0m" 308 -
+2025-06-04 11:40:10,443 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:10] "[35m[1mPOST /api/courses/ HTTP/1.1[0m" 201 -
+2025-06-04 11:40:19,259 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:40:19,647 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:19] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:40:19,649 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:19] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:40:19,657 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:19] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:40:19,663 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:19] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:40:19,669 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:19] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:40:19,911 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:40:19,915 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:40:19,916 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:40:19,917 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:40:19,939 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:40:19,950 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114019.jpg
+2025-06-04 11:40:19,951 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:40:19,954 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114019.jpg
+2025-06-04 11:40:19,955 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:40:19,956 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:40:19,956 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:40:20,099 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 0.52
+2025-06-04 11:40:20,102 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:40:20] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:40:30,441 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:30] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:40:30,448 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:30] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:40:30,451 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:30] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:40:30,455 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:30] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:40:30,456 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:30] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:40:30,740 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:30] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:40:31,059 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:40:31,811 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:40:31,815 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:40:31,816 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:40:31,817 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:40:31,838 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:40:31,848 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114031.jpg
+2025-06-04 11:40:31,849 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:40:31,852 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114031.jpg
+2025-06-04 11:40:31,853 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:40:31,854 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:40:31,854 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:40:31,998 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:40:32,011 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:40:32] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:40:50,388 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:50] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 11:40:50,504 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:50] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 11:40:50,824 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:50] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 11:40:50,841 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:50] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 11:40:50,856 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:50] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 11:40:50,857 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:50] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:40:50,866 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:50] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:40:52,237 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:40:52] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 11:41:10,414 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 11:41:10] "GET /api/classes/by-course/7 HTTP/1.1" 200 -
+2025-06-04 11:41:13,361 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:41:14,365 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:41:14,369 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:41:14,369 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:41:14,370 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:41:14,392 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:41:14,403 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114114.jpg
+2025-06-04 11:41:14,403 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:41:14,406 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114114.jpg
+2025-06-04 11:41:14,407 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:41:14,408 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:41:14,408 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:41:14,550 - src.database.api.services.hand_scan_service - INFO - Predicted class: 0, Confidence: 1.00
+2025-06-04 11:41:14,563 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:41:14] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:41:40,432 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:41:40,885 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:41:40,888 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:41:40,889 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:41:40,890 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:41:40,912 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:41:40,922 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114140.jpg
+2025-06-04 11:41:40,923 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:41:40,927 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114140.jpg
+2025-06-04 11:41:40,927 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:41:40,928 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:41:40,929 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:41:41,091 - src.database.api.services.hand_scan_service - INFO - Predicted class: 0, Confidence: 1.00
+2025-06-04 11:41:41,105 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:41:41] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:42:21,442 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:42:22,008 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:42:22,011 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:42:22,012 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:42:22,012 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:42:22,048 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:42:22,058 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114222.jpg
+2025-06-04 11:42:22,058 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:42:22,061 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114222.jpg
+2025-06-04 11:42:22,062 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:42:22,062 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:42:22,063 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:42:22,212 - src.database.api.services.hand_scan_service - INFO - Predicted class: 0, Confidence: 1.00
+2025-06-04 11:42:22,235 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:42:22] "POST /api/scan-hand HTTP/1.1" 200 -
+2025-06-04 11:42:43,325 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:42:44,370 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:42:44,374 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:42:44,375 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:42:44,375 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:42:44,397 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:42:44,407 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114244.jpg
+2025-06-04 11:42:44,408 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:42:44,411 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114244.jpg
+2025-06-04 11:42:44,412 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:42:44,412 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:42:44,413 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:42:44,560 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:42:44,592 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:42:44] "POST /api/scan-hand HTTP/1.1" 200 -
+2025-06-04 11:42:59,720 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:43:01,009 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:43:01,013 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:43:01,014 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:43:01,015 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:43:01,043 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:43:01,054 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114301.jpg
+2025-06-04 11:43:01,055 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:43:01,058 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114301.jpg
+2025-06-04 11:43:01,059 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:43:01,059 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:43:01,060 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:43:01,214 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:43:01,226 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:43:01] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:43:26,329 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:43:27,099 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:43:27,102 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:43:27,103 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:43:27,104 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:43:27,125 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:43:27,134 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114327.jpg
+2025-06-04 11:43:27,135 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:43:27,139 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114327.jpg
+2025-06-04 11:43:27,139 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:43:27,140 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:43:27,140 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:43:27,284 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:43:27,297 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:43:27] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:43:51,930 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:43:52,530 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:43:52,533 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:43:52,534 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:43:52,535 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:43:52,559 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:43:52,579 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114352.jpg
+2025-06-04 11:43:52,579 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:43:52,583 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114352.jpg
+2025-06-04 11:43:52,584 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:43:52,584 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:43:52,585 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:43:52,725 - src.database.api.services.hand_scan_service - INFO - Predicted class: 1, Confidence: 1.00
+2025-06-04 11:43:52,738 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:43:52] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:44:07,069 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:44:08,841 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:44:08,844 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:44:08,845 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:44:08,845 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:44:08,868 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:44:08,879 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114408.jpg
+2025-06-04 11:44:08,880 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:44:08,883 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114408.jpg
+2025-06-04 11:44:08,884 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:44:08,884 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:44:08,885 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:44:09,040 - src.database.api.services.hand_scan_service - INFO - Predicted class: 1, Confidence: 1.00
+2025-06-04 11:44:09,054 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:44:09] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:44:19,933 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:44:21,485 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:44:21,490 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:44:21,491 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:44:21,491 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:44:21,513 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:44:21,523 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114421.jpg
+2025-06-04 11:44:21,524 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:44:21,527 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114421.jpg
+2025-06-04 11:44:21,528 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:44:21,528 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:44:21,529 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:44:21,666 - src.database.api.services.hand_scan_service - INFO - Predicted class: 0, Confidence: 1.00
+2025-06-04 11:44:21,678 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:44:21] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:44:38,490 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:44:38] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 11:44:46,045 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:44:46,710 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:44:46,714 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:44:46,715 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:44:46,716 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:44:46,738 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:44:46,748 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114446.jpg
+2025-06-04 11:44:46,748 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:44:46,753 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114446.jpg
+2025-06-04 11:44:46,754 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:44:46,755 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:44:46,756 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:44:46,911 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:44:46,924 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:44:46] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:44:48,898 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:44:49,598 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:44:49,613 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:44:49,614 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:44:49,614 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:44:49,635 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:44:49,645 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114449.jpg
+2025-06-04 11:44:49,646 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:44:49,649 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114449.jpg
+2025-06-04 11:44:49,650 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:44:49,651 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:44:49,651 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:44:49,810 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 11:44:49,822 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:44:49] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 11:44:55,515 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 11:44:55,976 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 11:44:55,980 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 11:44:55,981 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 11:44:55,981 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 11:44:56,008 - src.database.api.services.hand_scan_service - INFO - Original image shape: (1080, 1080)
+2025-06-04 11:44:56,017 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_114456.jpg
+2025-06-04 11:44:56,017 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 11:44:56,020 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_114456.jpg
+2025-06-04 11:44:56,021 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 11:44:56,021 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 11:44:56,022 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 11:44:56,174 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 0.77
+2025-06-04 11:44:56,185 - werkzeug - INFO - 192.168.1.8 - - [04/Jun/2025 11:44:56] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 12:03:53,681 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:03:53] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 12:03:54,026 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:03:54] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 12:03:54,762 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:03:54] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 12:03:54,765 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:03:54] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 12:03:54,768 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:03:54] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 12:03:54,788 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:03:54] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 12:03:54,792 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:03:54] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 12:04:06,765 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 12:04:13,875 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 12:04:13,882 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 12:04:13,883 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 12:04:13,883 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 12:04:13,968 - src.database.api.services.hand_scan_service - INFO - Original image shape: (3056, 3056)
+2025-06-04 12:04:14,016 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_120413.jpg
+2025-06-04 12:04:14,016 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 12:04:14,021 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_120413.jpg
+2025-06-04 12:04:14,022 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 12:04:14,022 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 12:04:14,023 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 12:04:14,166 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 12:04:14,178 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:04:14] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 12:04:46,232 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 12:04:54,466 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 12:04:54,474 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 12:04:54,475 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 12:04:54,475 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 12:04:54,545 - src.database.api.services.hand_scan_service - INFO - Original image shape: (3056, 3056)
+2025-06-04 12:04:54,597 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_120454.jpg
+2025-06-04 12:04:54,598 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 12:04:54,602 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_120454.jpg
+2025-06-04 12:04:54,603 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 12:04:54,603 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 12:04:54,604 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 12:04:54,745 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 12:04:54,763 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:04:54] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 12:05:06,221 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 12:05:10,827 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 12:05:10,834 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 12:05:10,835 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 12:05:10,836 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 12:05:10,900 - src.database.api.services.hand_scan_service - INFO - Original image shape: (3056, 3056)
+2025-06-04 12:05:10,947 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_120510.jpg
+2025-06-04 12:05:10,947 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 12:05:10,952 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_120510.jpg
+2025-06-04 12:05:10,953 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 12:05:10,954 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 12:05:10,954 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 12:05:11,098 - src.database.api.services.hand_scan_service - INFO - Predicted class: 3, Confidence: 1.00
+2025-06-04 12:05:11,113 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:05:11] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 12:05:22,372 - src.database.api.controllers.hand_scan_controller - INFO - Received hand scan request
+2025-06-04 12:05:27,122 - src.database.api.controllers.hand_scan_controller - INFO - Processing file: scan.jpg
+2025-06-04 12:05:27,129 - src.database.api.controllers.hand_scan_controller - INFO - File saved successfully at: src/storage/uploads\scan.jpg
+2025-06-04 12:05:27,130 - src.database.api.services.hand_scan_service - INFO - Starting image preprocessing
+2025-06-04 12:05:27,131 - src.database.api.services.hand_scan_service - INFO - Processing image from path: src/storage/uploads\scan.jpg
+2025-06-04 12:05:27,195 - src.database.api.services.hand_scan_service - INFO - Original image shape: (3056, 3056)
+2025-06-04 12:05:27,246 - src.database.api.services.hand_scan_service - INFO - Original image saved at: src\storage\scans\original_20250604_120527.jpg
+2025-06-04 12:05:27,246 - src.database.api.services.hand_scan_service - INFO - Resizing image to 224x224
+2025-06-04 12:05:27,250 - src.database.api.services.hand_scan_service - INFO - Processed image saved at: src\storage\scans\processed_20250604_120527.jpg
+2025-06-04 12:05:27,251 - src.database.api.services.hand_scan_service - INFO - Normalizing image values
+2025-06-04 12:05:27,251 - src.database.api.services.hand_scan_service - INFO - Adding channel and batch dimensions
+2025-06-04 12:05:27,252 - src.database.api.services.hand_scan_service - INFO - Preprocessed image shape: (1, 224, 224, 1)
+2025-06-04 12:05:27,404 - src.database.api.services.hand_scan_service - INFO - Predicted class: 0, Confidence: 1.00
+2025-06-04 12:05:27,417 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:05:27] "[31m[1mPOST /api/scan-hand HTTP/1.1[0m" 400 -
+2025-06-04 12:05:33,034 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:05:33] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 12:05:33,965 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:05:33] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 12:05:44,700 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:05:44] "[31m[1mDELETE /api/courses/12 HTTP/1.1[0m" 405 -
+2025-06-04 12:05:51,781 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:05:51] "[31m[1mDELETE /api/courses/12 HTTP/1.1[0m" 405 -
+2025-06-04 12:05:57,906 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:05:57] "[31m[1mDELETE /api/courses/7 HTTP/1.1[0m" 405 -
+2025-06-04 12:07:51,917 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\course_controller.py', reloading
+2025-06-04 12:07:52,882 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 12:08:02,383 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 12:08:02,384 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 12:08:02,385 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 12:08:02,818 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 12:08:02,829 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 12:08:02,830 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 12:08:02,830 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 12:08:02,913 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 12:08:02,924 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 12:08:22,407 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\course_controller.py', reloading
+2025-06-04 12:08:23,137 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 12:08:30,805 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 12:08:30,805 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 12:08:30,806 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 12:08:31,121 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 12:08:31,132 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 12:08:31,132 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 12:08:31,133 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 12:08:31,205 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 12:08:31,217 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 12:09:30,006 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:09:30] "POST /api/auth/login HTTP/1.1" 200 -
+2025-06-04 12:09:30,488 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:09:30] "GET /api/user/profile HTTP/1.1" 200 -
+2025-06-04 12:09:31,371 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:09:31] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 12:09:31,405 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:09:31] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 12:09:31,417 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:09:31] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 12:09:31,434 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:09:31] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 12:09:31,464 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:09:31] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 12:09:36,356 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:09:36] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 12:09:39,045 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:09:39] "DELETE /api/courses/12 HTTP/1.1" 200 -
+2025-06-04 12:09:39,511 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:09:39] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 12:10:06,128 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:10:06] "[32mPOST /api/courses HTTP/1.1[0m" 308 -
+2025-06-04 12:10:06,589 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:10:06] "[35m[1mPOST /api/courses/ HTTP/1.1[0m" 201 -
+2025-06-04 12:10:20,529 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\course_controller.py', reloading
