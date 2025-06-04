@@ -141,3 +141,28 @@ def get_class_detail(class_id):
             "status": "error",
             "message": "Internal server error"
         }, 500
+
+@class_bp.route('/<int:class_id>', methods=['DELETE'])
+@admin_required
+def delete_class(class_id):
+    try:
+        print(f"Attempting to delete class with ID: {class_id}")
+        success, error = class_service.delete_class(class_id)
+        if error:
+            print(f"Error deleting class: {error}")
+            return {
+                "status": "error",
+                "message": error
+            }, 400
+
+        print(f"Successfully deleted class with ID: {class_id}")
+        return {
+            "status": "success",
+            "message": "Class deleted successfully"
+        }, 200
+    except Exception as e:
+        print(f"Error in delete_class endpoint: {str(e)}")
+        return {
+            "status": "error",
+            "message": "Internal server error"
+        }, 500
