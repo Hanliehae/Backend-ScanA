@@ -10779,3 +10779,18 @@ Arguments received by Functional.call():
 2025-06-04 12:10:06,128 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:10:06] "[32mPOST /api/courses HTTP/1.1[0m" 308 -
 2025-06-04 12:10:06,589 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:10:06] "[35m[1mPOST /api/courses/ HTTP/1.1[0m" 201 -
 2025-06-04 12:10:20,529 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\course_controller.py', reloading
+2025-06-04 12:10:21,580 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 12:10:30,075 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 12:10:30,076 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 12:10:30,076 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 12:10:30,411 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 12:10:30,421 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 12:10:30,422 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 12:10:30,423 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 12:10:30,498 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 12:10:30,510 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 12:10:37,624 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:10:37] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 12:10:37,644 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:10:37] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 12:10:37,662 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:10:37] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 12:10:37,700 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:10:37] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 12:10:37,705 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 12:10:37] "GET /api/meetings/all HTTP/1.1" 200 -
