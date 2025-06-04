@@ -9531,3 +9531,171 @@ Arguments received by Functional.call():
 2025-06-04 10:12:09,627 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:12:09] "GET /api/user/ HTTP/1.1" 200 -
 2025-06-04 10:12:12,118 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:12:12] "[31m[1mDELETE /api/classes/18 HTTP/1.1[0m" 400 -
 2025-06-04 10:12:48,584 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\class_service.py', reloading
+2025-06-04 10:12:49,585 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:12:58,864 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:12:58,865 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:12:58,865 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:12:59,204 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:12:59,214 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:12:59,215 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:12:59,215 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:12:59,290 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:12:59,302 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:13:49,470 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:13:49] "DELETE /api/classes/18 HTTP/1.1" 200 -
+2025-06-04 10:13:49,822 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:13:49] "GET /api/classes/by-course/5 HTTP/1.1" 200 -
+2025-06-04 10:16:23,533 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:16:23] "GET /api/classes/by-course/5 HTTP/1.1" 200 -
+2025-06-04 10:18:11,842 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\class_service.py', reloading
+2025-06-04 10:18:12,697 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:18:22,606 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:18:22,606 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:18:22,608 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:18:22,980 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:18:22,990 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:18:22,991 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:18:22,991 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:18:23,073 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:18:23,085 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:18:33,464 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:33] "GET /api/classes/by-course/5 HTTP/1.1" 200 -
+2025-06-04 10:18:36,532 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:36] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:18:38,302 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:38] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:18:38,326 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:38] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:18:39,391 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:39] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:18:41,608 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:41] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:18:41,609 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:41] "GET /api/meetings/by-class/17 HTTP/1.1" 200 -
+2025-06-04 10:18:50,623 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:50] "DELETE /api/classes/17 HTTP/1.1" 200 -
+2025-06-04 10:18:50,839 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:50] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:18:53,052 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:53] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:18:53,055 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:53] "GET /api/meetings/by-class/16 HTTP/1.1" 200 -
+2025-06-04 10:18:57,708 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:57] "DELETE /api/classes/16 HTTP/1.1" 200 -
+2025-06-04 10:18:57,897 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:57] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:18:59,048 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:59] "GET /api/meetings/by-class/15 HTTP/1.1" 200 -
+2025-06-04 10:18:59,049 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:18:59] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:19:00,475 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:00] "DELETE /api/classes/15 HTTP/1.1" 200 -
+2025-06-04 10:19:00,687 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:00] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:19:02,999 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:02] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:19:03,004 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:03] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:19:08,755 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:08] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:19:12,286 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:12] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-04 10:19:13,714 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:13] "GET /api/meetings/by-class/20 HTTP/1.1" 200 -
+2025-06-04 10:19:13,738 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:13] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:19:15,049 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:15] "DELETE /api/classes/20 HTTP/1.1" 200 -
+2025-06-04 10:19:15,487 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:15] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-04 10:19:17,979 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:17] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-04 10:19:19,137 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:19] "GET /api/meetings/by-class/19 HTTP/1.1" 200 -
+2025-06-04 10:19:19,138 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:19] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:19:20,583 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:20] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-04 10:19:22,898 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:22] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:19:24,044 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:24] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:19:24,080 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:24] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:19:24,704 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:24] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:19:26,615 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:26] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-04 10:19:27,684 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:27] "GET /api/meetings/by-class/19 HTTP/1.1" 200 -
+2025-06-04 10:19:27,717 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:27] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:19:31,547 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:19:31] "GET /api/classes/by-course/6 HTTP/1.1" 200 -
+2025-06-04 10:20:10,648 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:20:10] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 10:20:39,681 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\course_controller.py', reloading
+2025-06-04 10:20:40,558 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:20:50,757 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:20:50,758 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:20:50,759 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:20:51,142 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:20:51,152 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:20:51,153 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:20:51,153 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:20:51,237 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:20:51,247 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:22:04,681 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:22:04] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:22:04,737 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:22:04] "GET /api/classes/ HTTP/1.1" 200 -
+2025-06-04 10:22:04,754 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:22:04] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 10:22:04,772 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:22:04] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 10:22:04,803 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:22:04] "GET /api/admin/history/ HTTP/1.1" 200 -
+2025-06-04 10:22:06,000 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:22:06] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:22:13,965 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:22:13] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 10:22:20,574 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:22:20] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 10:23:48,801 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:23:48] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 10:23:52,149 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:23:52] "GET /api/classes/by-course/5 HTTP/1.1" 200 -
+2025-06-04 10:23:55,177 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:23:55] "GET /api/classes/by-course/5 HTTP/1.1" 200 -
+2025-06-04 10:23:56,999 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:23:56] "GET /api/classes/by-course/5 HTTP/1.1" 200 -
+2025-06-04 10:23:58,392 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:23:58] "GET /api/classes/by-course/5 HTTP/1.1" 200 -
+2025-06-04 10:23:59,954 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:23:59] "GET /api/classes/by-course/5 HTTP/1.1" 200 -
+2025-06-04 10:25:02,850 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:25:02] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 10:25:16,676 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:25:16] "[35m[1mDELETE /api/courses/5 HTTP/1.1[0m" 500 -
+2025-06-04 10:25:52,942 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\course_service.py', reloading
+2025-06-04 10:25:53,911 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:26:04,397 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:26:04,398 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:26:04,398 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:26:04,809 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:26:04,821 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:26:04,822 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:26:04,824 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:26:04,914 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:26:04,931 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:26:35,898 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:26:35] "DELETE /api/courses/5 HTTP/1.1" 200 -
+2025-06-04 10:26:36,146 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:26:36] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 10:27:04,114 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:27:04] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:27:09,936 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:27:09] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:27:10,005 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:27:10] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:27:11,811 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:27:11] "GET /api/class-students/by-class/all/14 HTTP/1.1" 200 -
+2025-06-04 10:27:12,631 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:27:12] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:27:12,943 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:27:12] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:27:13,530 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:27:13] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:39:32,342 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:39:32] "DELETE /api/courses/6 HTTP/1.1" 200 -
+2025-06-04 10:39:32,566 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:39:32] "GET /api/courses/ HTTP/1.1" 200 -
+2025-06-04 10:39:42,461 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:39:42] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:39:51,857 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:39:51] "GET /api/meetings/all HTTP/1.1" 200 -
+2025-06-04 10:39:53,277 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:39:53] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:39:55,928 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:39:55] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:39:56,570 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:39:56] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:40:07,202 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:40:07] "GET /api/class-students/by-class/14?meeting_id=18 HTTP/1.1" 200 -
+2025-06-04 10:40:09,998 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:40:09] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:40:14,097 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:40:14] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:40:15,855 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:40:15] "GET /api/meetings/by-class/14 HTTP/1.1" 200 -
+2025-06-04 10:40:15,865 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:40:15] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:41:33,446 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:41:33] "GET /api/classes/by-course/4 HTTP/1.1" 200 -
+2025-06-04 10:41:44,078 - werkzeug - INFO - 192.168.1.14 - - [04/Jun/2025 10:41:44] "GET /api/user/ HTTP/1.1" 200 -
+2025-06-04 10:41:54,048 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\user_service.py', reloading
+2025-06-04 10:41:55,072 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:42:11,317 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:42:11,318 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:42:11,318 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:42:11,673 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:42:11,681 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:42:11,682 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:42:11,682 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:42:11,753 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:42:11,762 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:42:15,374 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\user_service.py', reloading
+2025-06-04 10:42:16,084 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:42:21,631 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:42:21,631 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:42:21,632 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:42:21,857 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:42:21,863 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:42:21,864 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:42:21,864 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:42:21,917 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:42:21,924 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:42:25,074 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\controllers\\course_controller.py', reloading
+2025-06-04 10:42:25,777 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:42:31,360 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:42:31,361 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:42:31,361 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:42:31,566 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:42:31,572 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:42:31,573 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:42:31,573 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:42:31,619 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:42:31,625 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:49:20,529 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\course_service.py', reloading
+2025-06-04 10:49:21,370 - werkzeug - INFO -  * Restarting with stat
+2025-06-04 10:49:30,494 - src.database.api.services.hand_scan_service - INFO - Starting model loading process
+2025-06-04 10:49:30,495 - src.database.api.services.hand_scan_service - INFO - Looking for model at: src\storage\models\model_telapak_v1.h5
+2025-06-04 10:49:30,496 - src.database.api.services.hand_scan_service - INFO - Model file found, attempting to load
+2025-06-04 10:49:30,844 - absl - WARNING - Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+2025-06-04 10:49:30,856 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully
+2025-06-04 10:49:30,856 - src.database.api.services.hand_scan_service - INFO - Model loaded successfully with classes: []
+2025-06-04 10:49:30,857 - src.database.api.services.hand_scan_service - INFO - Total classes: 0
+2025-06-04 10:49:30,944 - werkzeug - WARNING -  * Debugger is active!
+2025-06-04 10:49:30,957 - werkzeug - INFO -  * Debugger PIN: 589-864-851
+2025-06-04 10:49:50,848 - werkzeug - INFO -  * Detected change in 'C:\\Users\\melia\\Documents\\PPL\\scana-baru\\backendnew-ScanA\\src\\database\\api\\services\\course_service.py', reloading

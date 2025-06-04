@@ -134,3 +134,50 @@ def get_course_by_id(course_id):
     course = session.query(Course).filter(Course.id == course_id).first()
     session.close()
     return course
+
+def delete_course(course_id):
+    session = SessionLocal()
+    try:
+        print(f"Checking if course {course_id} exists...")
+        # Check if course exists
+        course = session.query(Course).get(course_id)
+        if not course:
+            print(f"Course {course_id} not found")
+            return False, "Course not found"
+
+        print(f"Getting all classes for course {course_id}...")
+        # Get all classes for this course
+        classes = session.query(Class).filter(Class.course_id == course_id).all()
+        
+        # For each class, delete its related records
+        for class_obj in classes:
+            print(f"Processing class {class_obj.id}...")
+            
+            # Get all class_student records for this class
+            class_students = session.query(ClassStudent).filter(ClassStudent.class_id == class_obj.id).all()
+            
+            # Delete attendance records for each class_student
+            for cs in class_students:
+                print(f"Deleting attendance records for class_student {cs.id}...")
+                session.query(Attendance).filter(Attendance.class_student_id == cs.id).delete()
+            
+            # Delete class_students and meetings
+            deleted_students = session.query(ClassStudent).filter(ClassStudent.class_id == class_obj.id).delete()
+            deleted_meetings = session.query(Meeting).filter(Meeting.class_id == class_obj.id).delete()
+            print(f"Deleted {deleted_students} student records and {deleted_meetings} meeting records")
+            
+            # Delete the class
+            session.delete(class_obj)
+        
+        print(f"Deleting course {course_id}...")
+        # Finally delete the course
+        session.delete(course)
+        session.commit()
+        print(f"Successfully deleted course {course_id}")
+        return True, None
+    except Exception as e:
+        print(f"Error in delete_course service: {str(e)}")
+        session.rollback()
+        return False, str(e)
+    finally:
+        session.close()
