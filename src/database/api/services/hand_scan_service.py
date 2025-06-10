@@ -31,7 +31,7 @@ def load_hand_model():
     global model, class_names
     try:
         logger.info("Starting model loading process")
-        model_path = os.path.join('src', 'storage', 'models', 'palm_lines_model(4dts).keras')
+        model_path = os.path.join('src', 'storage', 'models', 'model_telapak_v1.h5')
         logger.info(f"Looking for model at: {model_path}")
         
         if os.path.exists(model_path):
@@ -71,65 +71,51 @@ load_hand_model()
 def preprocess_image(image):
     try:
         logger.info("Starting image preprocessing")
-        
-        # Create directory based on current date
-        current_date = datetime.now().strftime('%Y%m%d_%H%M%S_%f')
-        scan_dir = os.path.join('src', 'storage', 'scans', current_date)
-        os.makedirs(scan_dir, exist_ok=True)
-        
-        # Generate unique filename with timestamp
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S_%f')
-        
         if isinstance(image, str):
             logger.info(f"Processing image from path: {image}")
-            img = cv2.imread(image)
+            img = cv2.imread(image, cv2.IMREAD_GRAYSCALE)
             if img is None:
                 logger.error(f"Failed to read image file: {image}")
                 raise ValueError(f"Could not read image file: {image}")
-            # Save original image
-            cv2.imwrite(os.path.join(scan_dir, f"{timestamp}_00_original.jpg"), img)
         else:
             logger.info("Processing image from numpy array")
-            if len(image.shape) == 2:  # Grayscale
-                img = cv2.cvtColor(image, cv2.COLOR_GRAY2RGB)
+            # Jika input bukan path, pastikan konversi ke grayscale
+            if len(image.shape) == 3:  # Jika gambar berwarna (RGB/BGR)
+                img = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
             else:
                 img = image.copy()
-            # Save original image
-            cv2.imwrite(os.path.join(scan_dir, f"{timestamp}_00_original.jpg"), img)
         
-        # Convert BGR to RGB then to Grayscale
-        img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        cv2.imwrite(os.path.join(scan_dir, f"{timestamp}_01_rgb.jpg"), img_rgb)
+        # Log image properties
+        logger.info(f"Original image shape: {img.shape}")
         
-        img_gray = cv2.cvtColor(img_rgb, cv2.COLOR_RGB2GRAY)
-        cv2.imwrite(os.path.join(scan_dir, f"{timestamp}_02_gray.jpg"), img_gray)
-
-        # Apply CLAHE
-        clahe = cv2.createCLAHE(clipLimit=4.0, tileGridSize=(8, 8))
-        clahe_img = clahe.apply(img_gray)
-        cv2.imwrite(os.path.join(scan_dir, f"{timestamp}_03_clahe.jpg"), clahe_img)
-
-        # Apply Denoised
-        denoised = cv2.fastNlMeansDenoising(clahe_img, None, h=15, templateWindowSize=7, searchWindowSize=21)
-        cv2.imwrite(os.path.join(scan_dir, f"{timestamp}_04_clahe.jpg"), clahe_img)
-
-        # DoG
-        gauss1 = cv2.GaussianBlur(denoised, (0, 0), sigmaX=0.5)
-        gauss2 = cv2.GaussianBlur(denoised, (0, 0), sigmaX=2.0)
-        dog = gauss1 - gauss2
-        dog = cv2.normalize(dog, None, 0, 255, cv2.NORM_MINMAX)
-        cv2.imwrite(os.path.join(scan_dir, f"{timestamp}_05_DoG.jpg"), dog)
+        # Save original image
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        original_path = os.path.join('src', 'storage', 'scans', f'original_{timestamp}.jpg')
+        os.makedirs(os.path.dirname(original_path), exist_ok=True)
+        cv2.imwrite(original_path, img)
+        logger.info(f"Original image saved at: {original_path}")
         
-        # Resize
-        resized = cv2.resize(dog, (224, 224), interpolation=cv2.INTER_CUBIC)
-        cv2.imwrite(os.path.join(scan_dir, f"{timestamp}_06_resized.jpg"), resized)
-  
-        # Normalize and add batch dimension
-        normalized = resized / 255.0
-        img_array = np.expand_dims(normalized, axis=0)
         
-        logger.info(f"Preprocessed image shape: {img_array.shape}")
-        return img_array
+        # Resize ke ukuran yang diharapkan model
+        logger.info("Resizing image to 224x224")
+        img = cv2.resize(img, (224, 224))
+        
+        # Save processed image
+        processed_path = os.path.join('src', 'storage', 'scans', f'processed_{timestamp}.jpg')
+        cv2.imwrite(processed_path, cv2.cvtColor(img, cv2.COLOR_RGB2BGR))
+        logger.info(f"Processed image saved at: {processed_path}")
+        
+        # Normalisasi
+        logger.info("Normalizing image values")
+        img = img / 255.0
+        
+        # Tambahkan dimensi channel dan batch (model mengharapkan [batch, height, width, channels])
+        logger.info("Adding channel and batch dimensions")
+        img = np.expand_dims(img, axis=-1)  # Tambahkan channel dimension
+        img = np.expand_dims(img, axis=0)   # Tambahkan batch dimension
+        
+        logger.info(f"Preprocessed image shape: {img.shape}")
+        return img
             
     except Exception as e:
         logger.error(f"Error in preprocess_image: {str(e)}")
@@ -147,8 +133,8 @@ def predict_hand_owner(image):
             return None, 0.0, "Gagal memproses gambar"
             
         predictions = model.predict(img_array, verbose=0)
-        predicted_class = int(np.argmax(predictions))
-        confidence = float(np.max(predictions))
+        predicted_class = int(np.argmax(predictions[0]))
+        confidence = float(predictions[0][predicted_class])
 
         logger.info(f"Predicted class: {predicted_class}, Confidence: {confidence:.2f}")
         
